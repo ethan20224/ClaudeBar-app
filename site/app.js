@@ -56,37 +56,6 @@
     return "rgb(143,63,122)";
   }
 
-  // The app's own pixel numerals (PixelNumeral.swift): 3x5 glyphs, 4-cell advance.
-  var GLYPHS = {
-    "0": [7, 5, 5, 5, 7], "1": [2, 6, 2, 2, 7], "2": [7, 1, 7, 4, 7], "3": [7, 1, 7, 1, 7], "4": [5, 5, 7, 1, 1],
-    "5": [7, 4, 7, 1, 7], "6": [7, 4, 7, 5, 7], "7": [7, 1, 1, 1, 1], "8": [7, 5, 7, 5, 7], "9": [7, 5, 7, 1, 7],
-    "%": [5, 1, 2, 4, 5]
-  };
-  function numeral(value, percentColor) {
-    var ns = "http://www.w3.org/2000/svg", text = value + "%", cell = 7, w = text.length * 4 - 1;
-    var svg = document.createElementNS(ns, "svg");
-    svg.setAttribute("width", w * cell);
-    svg.setAttribute("height", 5 * cell);
-    svg.setAttribute("viewBox", "0 0 " + w + " 5");
-    svg.setAttribute("shape-rendering", "crispEdges");
-    svg.setAttribute("aria-hidden", "true");
-    text.split("").forEach(function (ch, i) {
-      GLYPHS[ch].forEach(function (bits, r) {
-        for (var c = 0; c < 3; c++) {
-          if (!(bits & (4 >> c))) continue;
-          var rect = document.createElementNS(ns, "rect");
-          rect.setAttribute("x", i * 4 + c);
-          rect.setAttribute("y", r);
-          rect.setAttribute("width", 1);
-          rect.setAttribute("height", 1);
-          rect.setAttribute("fill", ch === "%" ? percentColor : "var(--ink)");
-          svg.appendChild(rect);
-        }
-      });
-    });
-    return svg;
-  }
-
   function moodFor(u) {
     if (u >= 100) return "mood-locked";
     if (u >= 90) return "mood-maxed";
@@ -101,20 +70,20 @@
 
   // Demo ------------------------------------------------------------------
 
-  function buildCells(el, n) {
-    for (var i = 0; i < n; i++) el.appendChild(document.createElement("i"));
+  // The slider is a row of 30 pixel cells in the app's sky colors. The last filled cell gets the app's marker outline.
+  function buildTrack() {
+    var t = $("pixTrack");
+    for (var i = 0; i < 30; i++) t.appendChild(document.createElement("i"));
   }
 
-  function paintCells() {
-    var N = 30, filled = Math.round(usage / 100 * N);
-    var cells = $("cells").children;
+  function paintTrack() {
+    var N = 30, filled = Math.round(usage / 100 * N), cells = $("pixTrack").children;
     for (var i = 0; i < N; i++) {
       var on = i < filled;
       cells[i].style.background = on ? skyAt((i + 0.5) / N) : "";
-      cells[i].style.boxShadow = on && i === filled - 1 ? "inset 0 0 0 2px var(--ink)" : "none";
+      cells[i].style.boxShadow = on && i === filled - 1 ? "inset 0 0 0 3px var(--ink)" : "none";
     }
-    var weekly = $("weekCells").children;
-    for (var j = 0; j < N; j++) weekly[j].style.background = j < 7 ? "var(--weekon)" : "var(--weekoff)";
+    $("usage").setAttribute("aria-valuetext", usage + " percent");
   }
 
   function playMood(id) {
@@ -124,7 +93,7 @@
     if (key === animKey) return;
     animKey = key;
     clearTimeout(animTimer);
-    var targets = [$("stageSprite"), $("menuSprite")];
+    var targets = [$("menuSprite")];
     if (!frames || !frames.length) return;
     var i = 0;
     function show() {
@@ -138,21 +107,39 @@
     show();
   }
 
+  var MOOD_NAMES = { "mood-idle": "Idle", "mood-strained": "Sweating", "mood-maxed": "Red-hot", "mood-locked": "Ghost" };
+  var popToken = 0;
+
+  function popoverUrl(u) {
+    return "assets/popover/" + theme() + "/" + Math.max(4, Math.min(100, u)) + ".png";
+  }
+
+  // Swap in the next popover render only once it has loaded, so dragging never shows a blank frame.
+  function showPopover(u) {
+    var url = popoverUrl(u), token = ++popToken, img = new Image();
+    img.onload = function () { if (token === popToken) $("popImg").src = url; };
+    img.src = url;
+  }
+
+  function preloadPopovers() {
+    if (navigator.connection && navigator.connection.saveData) return;
+    var th = theme(), u = 4;
+    var later = window.requestIdleCallback ? function (f) { window.requestIdleCallback(f, { timeout: 600 }); } : function (f) { setTimeout(f, 150); };
+    (function next() {
+      if (theme() !== th || u > 100) return;
+      new Image().src = "assets/popover/" + th + "/" + u + ".png";
+      u += 4;
+      later(next);
+    })();
+  }
+
   function renderDemo() {
     var id = moodFor(usage);
-    var info = moodInfo(id);
-    var th = theme();
-    var scene = PAL[th][MOOD_SCENE[id]];
-    $("stage").style.background = scene;
-    $("moodName").textContent = info ? ({ "mood-idle": "Idle", "mood-strained": "Sweating", "mood-maxed": "Red-hot", "mood-locked": "Ghost" })[id] : "";
-    var pct = $("pct");
-    var level = usage < 60 ? "var(--sage)" : (usage < 80 ? "var(--amber)" : "var(--ember)");
-    pct.textContent = "";
-    pct.appendChild(numeral(usage, level));
-    pct.setAttribute("aria-label", usage + " percent");
-    $("menuLabel").textContent = usage + "% · 3h11m";
-    $("stageSprite").alt = "Clawd, looking " + $("moodName").textContent.toLowerCase();
-    paintCells();
+    var name = MOOD_NAMES[id];
+    $("menuLabel").textContent = usage + "% \u00b7 3h11m";
+    $("popImg").alt = "ClaudeBar popover at " + usage + " percent. Clawd is " + name.toLowerCase() + ".";
+    paintTrack();
+    showPopover(usage);
     playMood(id);
   }
 
@@ -251,7 +238,7 @@
     try { localStorage.setItem("claudebar-theme", next); } catch (e) {}
     animKey = "";
     renderChrome();
-    if (manifest) { renderDemo(); renderMoods(); renderMosaic(); renderGrid(); if ($("costumeDialog").open) openDialog(currentId); }
+    if (manifest) { renderDemo(); preloadPopovers(); renderMoods(); renderMosaic(); renderGrid(); if ($("costumeDialog").open) openDialog(currentId); }
   }
 
   // Costume browser -------------------------------------------------------
@@ -422,8 +409,7 @@
   // Boot ------------------------------------------------------------------
 
   function init() {
-    buildCells($("cells"), 30);
-    buildCells($("weekCells"), 30);
+    buildTrack();
     ["pointerdown", "keydown"].forEach(function (ev) { $("usage").addEventListener(ev, cancelIntro); });
     $("usage").addEventListener("input", function (e) {
       cancelIntro();
@@ -441,7 +427,7 @@
       } else { selectCommand(); done("Press ⌘C"); }
     });
     renderChrome();
-    paintCells();
+    paintTrack();
 
     var vid = $("launchVideo");
     if (vid && "IntersectionObserver" in window && !reduceMotion) {
@@ -459,6 +445,7 @@
       pool = m.editions;
       pullIndex = pool.length ? Math.floor(Math.random() * pool.length) : 0;
       renderDemo();
+      preloadPopovers();
       renderMoods();
       renderMosaic();
       initBrowse();

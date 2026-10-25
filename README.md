@@ -57,5 +57,5 @@ and [discussions](https://github.com/ethan20224/ClaudeBar-app/discussions). Secu
 
 ## License
 
-[MIT](LICENSE). Pixel font: Silkscreen, SIL Open Font License. See [THIRD_PARTY.md](THIRD_PARTY.md).
+[MIT](LICENSE). Pixel fonts: Silkscreen in the app and Press Start 2P on the website, both under the SIL Open Font License. See [THIRD_PARTY.md](THIRD_PARTY.md).
 Some Clawdex costumes are pixel tributes to existing franchises and brands; all trademarks belong to their owners.

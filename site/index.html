@@ -28,7 +28,7 @@
   })();
 </script>
 <link rel="stylesheet" href="styles.css">
-<link rel="preload" href="assets/fonts/Silkscreen-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/PressStart2P.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -71,41 +71,20 @@
       </div>
     </div>
 
-    <div class="popover">
-      <div class="pop-head">
-        <span class="t px">Claude</span>
-        <span class="plan px" id="planBadge">Pro</span>
-      </div>
-      <div>
-        <div class="stage" id="stage"><img class="sprite" id="stageSprite" src="assets/export/moods/dark/mood-idle-0.png" alt="Clawd, the pixel mascot" width="160" height="120"></div>
-        <p class="mood-line" style="margin-top:8px"><b>Clawd</b><span id="moodName">Idle</span></p>
-      </div>
-      <div class="window">
-        <span class="t px">5-hour window</span>
-        <div class="readout">
-          <span class="pct" id="pct" role="img" aria-label="38 percent"></span>
-          <div class="resets">
-            <span class="a px">Resets in</span>
-            <span class="b px">3h 11m</span>
-            <span class="c px">4:23 pm</span>
-          </div>
-        </div>
-        <div class="cells" id="cells" aria-hidden="true"></div>
-      </div>
-      <div class="window" style="gap:8px">
-        <div class="weekly-head"><span class="t px">Weekly</span><span class="v px">24%</span></div>
-        <div class="cells thin" id="weekCells" aria-hidden="true"></div>
-      </div>
-    </div>
+    <img class="pop-img" id="popImg" src="assets/popover/dark/38.png" width="640" height="644" alt="ClaudeBar popover at 38 percent. Clawd is idle.">
 
     <div class="slider">
       <label class="px" for="usage">Drag to see Clawd react</label>
-      <input id="usage" type="range" min="0" max="100" step="1" value="38" aria-label="Pretend 5-hour usage percentage">
-      <div class="ticks" aria-hidden="true">
-        <span class="px" style="left:75%;transform:translateX(-50%)">75</span>
-        <span class="px" style="left:90%;transform:translateX(-50%)">90</span>
-        <span class="px" style="right:0">100</span>
+      <div class="pix-slider" id="pixSlider">
+        <div class="pix-track" id="pixTrack" aria-hidden="true"></div>
+        <input id="usage" type="range" min="0" max="100" step="1" value="38" aria-label="Pretend 5-hour usage percentage">
       </div>
+      <div class="ticks" aria-hidden="true">
+        <span class="px" style="left:75%">75</span>
+        <span class="px" style="left:90%">90</span>
+        <span class="px" style="left:100%">100</span>
+      </div>
+      <p class="fine pop-note">This is the real popover, drawn by the app's own code.</p>
     </div>
   </div>
 </section>
@@ -115,7 +94,7 @@
     <div class="watch-copy">
       <span class="eyebrow px">24 seconds</span>
       <h2 class="h2">See it before it happens to you.</h2>
-      <p class="lede">Clawd gets nervous at 75%, red-hot at 90%, and a ghost at 100%. Then your limit resets.</p>
+      <p class="lede">Clawd sweats at 75%, goes red-hot at 90%, and turns into a ghost at 100%. Then your limit resets.</p>
     </div>
     <video id="launchVideo" class="video" src="assets/video/claudebar-launch.mp4" poster="assets/video/poster.png" muted loop playsinline preload="metadata" controls aria-label="A 24 second video: Clawd goes from calm to sweating to red-hot to a ghost as the usage bar fills, then your limit resets."></video>
   </div>
@@ -125,10 +104,10 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="eyebrow px">Seven moods</span>
-        <h2 class="h2">Clawd never talks. He just looks how you feel.</h2>
+        <span class="eyebrow px">The moods</span>
+        <h2 class="h2">Seven moods, driven by your real usage.</h2>
       </div>
-      <p class="lede">One mood at a time, always from your real usage. A warning is never hidden behind a costume.</p>
+      <p class="lede">Clawd never talks, and only one mood shows at a time. A warning is never hidden behind a costume.</p>
     </div>
     <div class="moods" id="moodsList"></div>
   </div>
@@ -139,7 +118,7 @@
     <div class="dex-copy">
       <span class="eyebrow px">The Clawdex</span>
       <h2 class="h2"><span id="editionCount">424</span> costumes. Pull one.</h2>
-      <p class="lede" style="max-width:28em">Astronaut, detective, wizard school, bee, and hundreds more across <span id="collectionCount">26</span> collections. Wear any of them, anytime.</p>
+      <p class="lede" style="max-width:28em">Astronaut, detective, wizard school, bee, and hundreds more across <span id="collectionCount">26</span> collections. Pick one to wear in your menu bar.</p>
       <button class="btn btn-accent" id="pullBtn" type="button">Pull a random Clawd</button>
       <dl class="facts" style="margin-bottom:0">
         <div><dt class="px">Outfits</dt><dd>Follow the calendar and the time of day.</dd></div>
@@ -181,7 +160,7 @@
 <section id="privacy" class="section">
   <div class="wrap cols">
     <div class="lead">
-      <span class="eyebrow px">Privacy, in plain words</span>
+      <span class="eyebrow px">Privacy</span>
       <h2 class="h2">What it reads, and when.</h2>
       <p class="lede" style="max-width:26em">To show your usage, ClaudeBar needs your claude.ai login. Here is every step, so you can say no.</p>
     </div>
@@ -263,7 +242,7 @@
     <img class="sprite" id="madeSprite" src="assets/export/editions/dark/wizard-school.png" alt="Clawd in a wizard-school costume" width="160" height="120">
     <div class="txt">
       <h2 class="h2">Made entirely with Claude Code.</h2>
-      <p>I don't write code. Every line of ClaudeBar was written by Claude Code, and I just kept asking for better.</p>
+      <p>I don't write code. Claude Code wrote every line of ClaudeBar.</p>
     </div>
   </div>
 </section>
@@ -281,7 +260,7 @@
         <a href="https://github.com/ethan20224/ClaudeBar-app/blob/main/LICENSE">MIT license</a>
       </div>
     </div>
-    <p class="disclaimer">Unofficial. Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic. Some costumes are pixel tributes to existing franchises and brands, and all such names belong to their owners. Pixel font: Silkscreen, SIL Open Font License.</p>
+    <p class="disclaimer">Unofficial. Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic. Some costumes are pixel tributes to existing franchises and brands, and all such names belong to their owners. Pixel font: Press Start 2P, SIL Open Font License.</p>
   </div>
 </footer>
 
