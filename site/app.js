@@ -251,7 +251,172 @@
     try { localStorage.setItem("claudebar-theme", next); } catch (e) {}
     animKey = "";
     renderChrome();
-    if (manifest) { renderDemo(); renderMoods(); renderMosaic(); }
+    if (manifest) { renderDemo(); renderMoods(); renderMosaic(); renderGrid(); if ($("costumeDialog").open) openDialog(currentId); }
+  }
+
+  // Costume browser -------------------------------------------------------
+
+  var browse = { q: "", col: "all", shown: 40 };
+  var STEP = 40;
+  var colIndex = {};
+  var currentId = null;
+  var lastFocus = null;
+
+  function byId(id) {
+    for (var i = 0; i < manifest.editions.length; i++) if (manifest.editions[i].id === id) return manifest.editions[i];
+    return null;
+  }
+
+  function collectionList() {
+    var seen = {}, list = [];
+    manifest.editions.forEach(function (e) {
+      if (!seen[e.collection]) {
+        seen[e.collection] = { id: e.collection, title: e.collectionTitle, count: 0 };
+        colIndex[e.collection] = list.length;
+        list.push(seen[e.collection]);
+      }
+      seen[e.collection].count++;
+    });
+    return list;
+  }
+
+  function matches(e) {
+    if (browse.col !== "all" && e.collection !== browse.col) return false;
+    if (!browse.q) return true;
+    var q = browse.q.toLowerCase();
+    return e.name.toLowerCase().indexOf(q) !== -1 || e.collectionTitle.toLowerCase().indexOf(q) !== -1 || e.blurb.toLowerCase().indexOf(q) !== -1;
+  }
+
+  function renderChips() {
+    var box = $("chips");
+    box.textContent = "";
+    var add = function (id, label) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip-btn";
+      b.textContent = label;
+      b.setAttribute("aria-pressed", browse.col === id ? "true" : "false");
+      b.addEventListener("click", function () { browse.col = id; browse.shown = STEP; renderChips(); renderGrid(); });
+      box.appendChild(b);
+    };
+    add("all", "All (" + manifest.editions.length + ")");
+    collectionList().forEach(function (c) { add(c.id, c.title + " (" + c.count + ")"); });
+  }
+
+  function renderGrid() {
+    var grid = $("grid");
+    var list = manifest.editions.filter(matches);
+    var th = theme();
+    grid.textContent = "";
+    list.slice(0, browse.shown).forEach(function (e) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "tile-btn";
+      b.style.background = PAL[th][PAL_KEYS[colIndex[e.collection] % PAL_KEYS.length]];
+      b.setAttribute("aria-label", e.name + ", " + e.collectionTitle);
+      var img = document.createElement("img");
+      img.className = "sprite";
+      img.width = 160; img.height = 120; img.loading = "lazy"; img.alt = "";
+      img.src = EXPORT + "editions/" + th + "/" + e.id + ".png";
+      var nm = document.createElement("span");
+      nm.className = "nm px";
+      nm.textContent = e.name;
+      b.appendChild(img); b.appendChild(nm);
+      b.addEventListener("click", function () { openDialog(e.id); });
+      grid.appendChild(b);
+    });
+    $("resultCount").textContent = list.length === 0 ? "No costume matches that." : list.length + (list.length === 1 ? " costume" : " costumes");
+    $("moreBtn").parentNode.hidden = list.length <= browse.shown;
+  }
+
+  function initBrowse() {
+    collectionList();
+    $("q").placeholder = "Search " + manifest.editions.length + " costumes";
+    $("q").addEventListener("input", function (e) { browse.q = e.target.value.trim(); browse.shown = STEP; renderGrid(); });
+    $("moreBtn").addEventListener("click", function () { browse.shown += STEP; renderGrid(); });
+    var dlg = $("costumeDialog");
+    $("dlgClose").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (ev) { if (ev.target === dlg) dlg.close(); });
+    dlg.addEventListener("close", function () {
+      currentId = null;
+      try { history.replaceState(null, "", location.pathname + location.search); } catch (err) {}
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    });
+    $("dlgCopy").addEventListener("click", function () {
+      var btn = $("dlgCopy");
+      var url = location.origin + location.pathname + "#c=" + currentId;
+      var done = function (label) { btn.textContent = label; setTimeout(function () { btn.textContent = "Copy link"; }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { done("Copied"); }, function () { done("Copy failed"); });
+      } else { done("Copy failed"); }
+    });
+    renderChips();
+    renderGrid();
+    window.addEventListener("hashchange", openFromHash);
+  }
+
+  function openDialog(id) {
+    var e = byId(id);
+    if (!e) return;
+    var th = theme();
+    var dlg = $("costumeDialog");
+    currentId = e.id;
+    $("dlgImg").src = EXPORT + "editions/" + th + "/" + e.id + ".png";
+    $("dlgImg").alt = "Clawd as " + e.name;
+    $("dlgStage").style.background = PAL[th][PAL_KEYS[colIndex[e.collection] % PAL_KEYS.length]];
+    $("dlgCol").textContent = e.collectionTitle;
+    $("dlgName").textContent = e.name;
+    $("dlgBlurb").textContent = e.blurb;
+    $("dlgNote").hidden = !e.trademarked;
+    var url = location.origin + location.pathname + "#c=" + e.id;
+    $("dlgShare").href = "https://x.com/intent/post?text=" + encodeURIComponent("Meet Clawd as " + e.name + ".") + "&url=" + encodeURIComponent(url);
+    if (!dlg.open) {
+      lastFocus = document.activeElement;
+      if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+    }
+    try { history.replaceState(null, "", "#c=" + e.id); } catch (err) {}
+  }
+
+  function openFromHash() {
+    var m = /^#c=([\w-]+)$/.exec(location.hash);
+    if (m && byId(m[1])) {
+      if (m[1] !== currentId || !$("costumeDialog").open) openDialog(m[1]);
+    } else if ($("costumeDialog").open) {
+      $("costumeDialog").close();
+    }
+  }
+
+  // The demo plays itself once, so nobody has to guess the slider is there. --
+
+  var introActive = false;
+  var introTimer = null;
+
+  function cancelIntro() {
+    if (!introActive) return;
+    introActive = false;
+    clearInterval(introTimer);
+  }
+
+  function startIntro() {
+    if (reduceMotion || introActive || usage !== 38) return;
+    introActive = true;
+    var phase = 0, hold = 0;
+    var tick = function () {
+      if (!introActive || document.hidden) return;
+      if (phase === 0) {
+        usage = Math.min(100, usage + 2);
+        if (usage >= 100) { phase = 1; hold = 0; }
+      } else if (phase === 1) {
+        hold++;
+        if (hold > 12) phase = 2;
+      } else {
+        usage = Math.max(38, usage - 8);
+        if (usage <= 38) cancelIntro();
+      }
+      $("usage").value = usage;
+      renderDemo();
+    };
+    setTimeout(function () { if (introActive) introTimer = setInterval(tick, 90); }, 900);
   }
 
   // Boot ------------------------------------------------------------------
@@ -259,7 +424,9 @@
   function init() {
     buildCells($("cells"), 30);
     buildCells($("weekCells"), 30);
+    ["pointerdown", "keydown"].forEach(function (ev) { $("usage").addEventListener(ev, cancelIntro); });
     $("usage").addEventListener("input", function (e) {
+      cancelIntro();
       usage = Number(e.target.value);
       if (manifest) renderDemo();
     });
@@ -276,16 +443,27 @@
     renderChrome();
     paintCells();
 
+    var vid = $("launchVideo");
+    if (vid && "IntersectionObserver" in window && !reduceMotion) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { var p = vid.play(); if (p && p.catch) p.catch(function () {}); } else { vid.pause(); }
+        });
+      }, { threshold: 0.4 }).observe(vid);
+    }
+
     fetch(EXPORT + "manifest.json").then(function (r) { return r.json(); }).then(function (m) {
       manifest = m;
       $("editionCount").textContent = String(m.counts.editions);
       $("collectionCount").textContent = String(m.counts.collections);
-      // The showcase draws from original-art editions. The total above counts every edition.
-      pool = m.editions.filter(function (e) { return !e.trademarked; });
+      pool = m.editions;
       pullIndex = pool.length ? Math.floor(Math.random() * pool.length) : 0;
       renderDemo();
       renderMoods();
       renderMosaic();
+      initBrowse();
+      openFromHash();
+      startIntro();
     }).catch(function () {
       $("moodsList").textContent = "The Clawdex could not load. Reload the page to try again.";
     });

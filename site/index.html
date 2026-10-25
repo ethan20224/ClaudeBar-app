@@ -110,6 +110,17 @@
   </div>
 </section>
 
+<section id="watch" class="section">
+  <div class="wrap watch">
+    <div class="watch-copy">
+      <span class="eyebrow px">24 seconds</span>
+      <h2 class="h2">See it before it happens to you.</h2>
+      <p class="lede">Clawd gets nervous at 75%, red-hot at 90%, and a ghost at 100%. Then your limit resets.</p>
+    </div>
+    <video id="launchVideo" class="video" src="assets/video/claudebar-launch.mp4" poster="assets/video/poster.png" muted loop playsinline preload="metadata" controls aria-label="A 24 second video: Clawd goes from calm to sweating to red-hot to a ghost as the usage bar fills, then your limit resets."></video>
+  </div>
+</section>
+
 <section id="moods" class="section">
   <div class="wrap">
     <div class="section-head">
@@ -139,7 +150,33 @@
     </div>
     <div class="mosaic" id="mosaic" aria-live="polite"></div>
   </div>
+  <div class="wrap browse" id="browse">
+    <div class="browse-head">
+      <h3 class="px b browse-title">Every costume</h3>
+      <label class="visually-hidden" for="q">Search costumes</label>
+      <input id="q" class="search" type="search" placeholder="Search costumes" autocomplete="off">
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Collections"></div>
+    <p class="result-count px" id="resultCount" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <div class="more"><button class="btn btn-line" id="moreBtn" type="button">Show more</button></div>
+  </div>
 </section>
+
+<dialog id="costumeDialog" class="dialog" aria-labelledby="dlgName">
+  <div class="dlg-stage" id="dlgStage"><img class="sprite" id="dlgImg" src="" alt="" width="320" height="240"></div>
+  <div class="dlg-body">
+    <span class="px dlg-col" id="dlgCol"></span>
+    <h3 class="px b dlg-name" id="dlgName"></h3>
+    <p class="dlg-blurb" id="dlgBlurb"></p>
+    <p class="dlg-note" id="dlgNote" hidden>A pixel tribute. All names and characters belong to their owners.</p>
+    <div class="dlg-actions">
+      <button class="btn btn-clay" id="dlgCopy" type="button">Copy link</button>
+      <a class="btn btn-line" id="dlgShare" href="#" target="_blank" rel="noopener">Share on X</a>
+      <button class="btn btn-line" id="dlgClose" type="button">Close</button>
+    </div>
+  </div>
+</dialog>
 
 <section id="privacy" class="section">
   <div class="wrap cols">
