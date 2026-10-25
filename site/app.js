@@ -178,17 +178,79 @@
 
   var pool = [];
 
+  // A costume's real idle loop: its frames sit side by side in one strip and we step through them
+  // with the timings the app uses. Mostly still, with a quick blink or shift now and then.
+  var CURVE = "cubic-bezier(0.23, 1, 0.32, 1)";
+  var FINE_POINTER = !!(window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches);
+
+  function startLoop(el, durations) {
+    var i = 0, last = durations.length - 1;
+    (function tick() {
+      if (!el.isConnected) return;
+      if (document.hidden) { setTimeout(tick, 400); return; }
+      el.style.backgroundPositionX = (i / last * 100) + "%";
+      var wait = Math.max(60, durations[i] * 1000);
+      i = (i + 1) % durations.length;
+      setTimeout(tick, wait);
+    })();
+  }
+
+  function makeAnim(e, th, label) {
+    var el = document.createElement("div");
+    el.className = "anim";
+    el.setAttribute("role", "img");
+    el.setAttribute("aria-label", label);
+    el.style.backgroundImage = "url(" + EXPORT + "editions/" + th + "/" + e.id + ".png)";
+    var durations = e.frames || [];
+    if (!reduceMotion && durations.length > 1) {
+      var strip = EXPORT + "editions-anim/" + th + "/" + e.id + ".png";
+      var img = new Image();
+      img.onload = function () {
+        if (!el.isConnected) return;
+        el.style.backgroundImage = "url(" + strip + ")";
+        el.style.backgroundSize = (durations.length * 100) + "% 100%";
+        startLoop(el, durations);
+      };
+      img.src = strip;
+    }
+    return el;
+  }
+
+  // A faint lean toward the pointer, eased so it settles instead of snapping. Mouse and trackpad only.
+  function attachTilt(area, getTarget) {
+    if (reduceMotion || !FINE_POINTER) return;
+    var raf = 0, tx = 0, ty = 0, cx = 0, cy = 0;
+    function frame() {
+      cx += (tx - cx) * 0.14;
+      cy += (ty - cy) * 0.14;
+      var target = getTarget();
+      if (target) target.style.transform = "perspective(900px) rotateX(" + cy.toFixed(2) + "deg) rotateY(" + cx.toFixed(2) + "deg)";
+      raf = (Math.abs(tx - cx) > 0.02 || Math.abs(ty - cy) > 0.02) ? requestAnimationFrame(frame) : 0;
+    }
+    area.addEventListener("pointermove", function (ev) {
+      var r = area.getBoundingClientRect();
+      tx = ((ev.clientX - r.left) / r.width - 0.5) * 8;
+      ty = -((ev.clientY - r.top) / r.height - 0.5) * 8;
+      if (!raf) raf = requestAnimationFrame(frame);
+    });
+    area.addEventListener("pointerleave", function () { tx = 0; ty = 0; if (!raf) raf = requestAnimationFrame(frame); });
+  }
+
   function editionTile(e, idx, big) {
     var th = theme();
     var tile = document.createElement("div");
     tile.className = big ? "tile-big" : "tile";
     tile.style.background = PAL[th][PAL_KEYS[idx % PAL_KEYS.length]];
-    var img = document.createElement("img");
-    img.className = "sprite";
-    img.alt = "Clawd, " + e.name;
-    img.width = 160; img.height = 120;
-    img.src = EXPORT + "editions/" + th + "/" + e.id + ".png";
-    tile.appendChild(img);
+    if (big) {
+      tile.appendChild(makeAnim(e, th, "Clawd, " + e.name));
+    } else {
+      var img = document.createElement("img");
+      img.className = "sprite";
+      img.alt = "Clawd, " + e.name;
+      img.width = 160; img.height = 120;
+      img.src = EXPORT + "editions/" + th + "/" + e.id + ".png";
+      tile.appendChild(img);
+    }
     if (big) {
       var tag = document.createElement("div");
       tag.className = "tag-big";
@@ -206,7 +268,9 @@
     box.textContent = "";
     if (!pool.length) return;
     var at = function (i) { return pool[((i % pool.length) + pool.length) % pool.length]; };
-    box.appendChild(editionTile(at(pullIndex), pullIndex, true));
+    var bigTile = editionTile(at(pullIndex), pullIndex, true);
+    attachTilt(bigTile, function () { return bigTile; });
+    box.appendChild(bigTile);
     for (var i = 1; i <= 8; i++) box.appendChild(editionTile(at(pullIndex + i), pullIndex + i, false));
   }
 
@@ -215,7 +279,30 @@
     var next = pullIndex;
     while (next === pullIndex) next = Math.floor(Math.random() * pool.length);
     pullIndex = next;
-    renderMosaic();
+    flipFeatured();
+  }
+
+  // The featured tile turns over like a trading card (about 280 ms), and the new costume lands.
+  // Pressing again mid-flip cancels it and starts over from the new pick.
+  var flipAnim = null;
+  function flipFeatured() {
+    var big = document.querySelector("#mosaic .tile-big");
+    if (reduceMotion || !big || !big.animate) { renderMosaic(); return; }
+    if (flipAnim) flipAnim.cancel();
+    var half = function (from, to) { return [{ transform: "perspective(900px) rotateY(" + from + "deg)" }, { transform: "perspective(900px) rotateY(" + to + "deg)" }]; };
+    var out = big.animate(half(0, 90), { duration: 140, easing: CURVE, fill: "forwards" });
+    flipAnim = out;
+    out.onfinish = function () {
+      renderMosaic();
+      var nb = document.querySelector("#mosaic .tile-big");
+      if (!nb) { flipAnim = null; return; }
+      var back = nb.animate(half(-90, 0), { duration: 140, easing: CURVE });
+      flipAnim = back;
+      back.onfinish = function () { flipAnim = null; };
+      document.querySelectorAll("#mosaic .tile").forEach(function (t, i) {
+        t.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 200, delay: i * 30, easing: CURVE, fill: "backwards" });
+      });
+    };
   }
 
   // Theme -----------------------------------------------------------------
@@ -283,22 +370,39 @@
       b.className = "chip-btn";
       b.textContent = label;
       b.setAttribute("aria-pressed", browse.col === id ? "true" : "false");
-      b.addEventListener("click", function () { browse.col = id; browse.shown = STEP; renderChips(); renderGrid(); });
+      b.addEventListener("click", function () { browse.col = id; browse.shown = STEP; renderChips(); renderGrid(0); });
       box.appendChild(b);
     };
     add("all", "All (" + manifest.editions.length + ")");
     collectionList().forEach(function (c) { add(c.id, c.title + " (" + c.count + ")"); });
   }
 
-  function renderGrid() {
+  // Tiles fade and rise a little when they first scroll into view and when a collection is picked. Typing in search stays instant.
+  var revealObserver = null;
+  function revealTiles(entries) {
+    var seen = 0;
+    entries.filter(function (en) { return en.isIntersecting; }).forEach(function (en) {
+      var t = en.target;
+      t.style.setProperty("--d", Math.min(seen++, 5));
+      t.classList.add("enter");
+      t.removeAttribute("data-new");
+      revealObserver.unobserve(t);
+    });
+  }
+
+  function renderGrid(animateFrom) {
     var grid = $("grid");
+    var animate = animateFrom !== undefined && !reduceMotion && "IntersectionObserver" in window;
+    if (revealObserver) revealObserver.disconnect();
+    if (animate && !revealObserver) revealObserver = new IntersectionObserver(revealTiles, { threshold: 0.15 });
     var list = manifest.editions.filter(matches);
     var th = theme();
     grid.textContent = "";
-    list.slice(0, browse.shown).forEach(function (e) {
+    list.slice(0, browse.shown).forEach(function (e, index) {
       var b = document.createElement("button");
       b.type = "button";
       b.className = "tile-btn";
+      if (animate && index >= animateFrom) { b.setAttribute("data-new", ""); revealObserver.observe(b); }
       b.style.background = PAL[th][PAL_KEYS[colIndex[e.collection] % PAL_KEYS.length]];
       b.setAttribute("aria-label", e.name + ", " + e.collectionTitle);
       var img = document.createElement("img");
@@ -309,7 +413,7 @@
       nm.className = "nm px";
       nm.textContent = e.name;
       b.appendChild(img); b.appendChild(nm);
-      b.addEventListener("click", function () { openDialog(e.id); });
+      b.addEventListener("click", function () { openDialog(e.id, b); });
       grid.appendChild(b);
     });
     $("resultCount").textContent = list.length === 0 ? "No costume matches that." : list.length + (list.length === 1 ? " costume" : " costumes");
@@ -320,7 +424,7 @@
     collectionList();
     $("q").placeholder = "Search " + manifest.editions.length + " costumes";
     $("q").addEventListener("input", function (e) { browse.q = e.target.value.trim(); browse.shown = STEP; renderGrid(); });
-    $("moreBtn").addEventListener("click", function () { browse.shown += STEP; renderGrid(); });
+    $("moreBtn").addEventListener("click", function () { var from = browse.shown; browse.shown += STEP; renderGrid(from); });
     var dlg = $("costumeDialog");
     $("dlgClose").addEventListener("click", function () { dlg.close(); });
     dlg.addEventListener("click", function (ev) { if (ev.target === dlg) dlg.close(); });
@@ -338,18 +442,20 @@
       } else { done("Copy failed"); }
     });
     renderChips();
-    renderGrid();
+    renderGrid(0);
+    attachTilt($("dlgStage"), function () { return $("dlgStage").firstElementChild; });
     window.addEventListener("hashchange", openFromHash);
   }
 
-  function openDialog(id) {
+  function openDialog(id, originEl) {
     var e = byId(id);
     if (!e) return;
     var th = theme();
     var dlg = $("costumeDialog");
+    var wasOpen = dlg.open;
     currentId = e.id;
-    $("dlgImg").src = EXPORT + "editions/" + th + "/" + e.id + ".png";
-    $("dlgImg").alt = "Clawd as " + e.name;
+    $("dlgStage").textContent = "";
+    $("dlgStage").appendChild(makeAnim(e, th, "Clawd as " + e.name));
     $("dlgStage").style.background = PAL[th][PAL_KEYS[colIndex[e.collection] % PAL_KEYS.length]];
     $("dlgCol").textContent = e.collectionTitle;
     $("dlgName").textContent = e.name;
@@ -360,6 +466,14 @@
     if (!dlg.open) {
       lastFocus = document.activeElement;
       if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+    }
+    // Grow out of the tile that was clicked (200 ms). A link opened cold, or a theme switch, does not replay it.
+    if (!wasOpen && !reduceMotion && dlg.animate) {
+      if (originEl) {
+        var from = originEl.getBoundingClientRect(), box = dlg.getBoundingClientRect();
+        dlg.style.transformOrigin = (from.left + from.width / 2 - box.left) + "px " + (from.top + from.height / 2 - box.top) + "px";
+      }
+      dlg.animate([{ opacity: 0, transform: "scale(0.92)" }, { opacity: 1, transform: "scale(1)" }], { duration: 200, easing: CURVE });
     }
     try { history.replaceState(null, "", "#c=" + e.id); } catch (err) {}
   }

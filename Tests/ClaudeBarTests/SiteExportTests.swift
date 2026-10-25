@@ -15,6 +15,24 @@ final class SiteExportTests: XCTestCase {
         try png.write(to: url)
     }
 
+    /// All of a costume's idle frames side by side (left to right), for the site's animated featured tile.
+    private func writeStrip(_ timeline: ClawdTimeline, to url: URL) throws {
+        let w = PixelCanvas.width * pxPerCell, h = PixelCanvas.height * pxPerCell
+        let space = try XCTUnwrap(CGColorSpace(name: CGColorSpace.sRGB))
+        let ctx = try XCTUnwrap(CGContext(data: nil, width: w * timeline.frames.count, height: h, bitsPerComponent: 8,
+                                          bytesPerRow: 0, space: space,
+                                          bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue))
+        ctx.interpolationQuality = .none
+        for (i, frame) in timeline.frames.enumerated() {
+            let cg = try XCTUnwrap(MascotRenderer.cgImage(frame.canvas, theme: timeline.theme, pxPerCell: pxPerCell))
+            ctx.draw(cg, in: CGRect(x: i * w, y: 0, width: w, height: h))
+        }
+        let image = try XCTUnwrap(ctx.makeImage())
+        let png = try XCTUnwrap(NSBitmapImageRep(cgImage: image).representation(using: .png, properties: [:]))
+        try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try png.write(to: url)
+    }
+
     func testExportSpritesAndManifest() throws {
         guard let path = ProcessInfo.processInfo.environment["CLAWD_EXPORT_DIR"], !path.isEmpty else {
             throw XCTSkip("set CLAWD_EXPORT_DIR to export the site sprites")
@@ -47,14 +65,18 @@ final class SiteExportTests: XCTestCase {
 
         var editions: [[String: Any]] = []
         for e in ClawdEditions.all {
+            var durations: [Double] = []
             for dark in [true, false] {
                 let tl = ClawdPreviewCache.timeline(edition: e.id, mood: .idle, dark: dark)
                 try writePNG(tl.frames[0].canvas, theme: tl.theme,
                              to: root.appendingPathComponent("editions/\(dark ? "dark" : "light")/\(e.id).png"))
+                try writeStrip(tl, to: root.appendingPathComponent("editions-anim/\(dark ? "dark" : "light")/\(e.id).png"))
+                if dark { durations = tl.frames.map(\.duration) }
             }
             editions.append([
                 "id": e.id, "name": e.name, "collection": e.collection.rawValue,
                 "collectionTitle": e.collection.title, "blurb": e.blurb, "trademarked": e.trademarked,
+                "frames": durations,
             ])
         }
 
@@ -75,7 +97,14 @@ final class SiteExportTests: XCTestCase {
         for e in ClawdEditions.all {
             for theme in ["dark", "light"] {
                 XCTAssertTrue(FileManager.default.fileExists(atPath: root.appendingPathComponent("editions/\(theme)/\(e.id).png").path), e.id)
+                XCTAssertTrue(FileManager.default.fileExists(atPath: root.appendingPathComponent("editions-anim/\(theme)/\(e.id).png").path), "strip \(e.id)")
             }
+        }
+        let listed = try XCTUnwrap(parsed["editions"] as? [[String: Any]])
+        for entry in listed {
+            let frames = try XCTUnwrap(entry["frames"] as? [Double])
+            XCTAssertGreaterThanOrEqual(frames.count, 2, "\(entry["id"] ?? "?") has no animation frames")
+            XCTAssertTrue(frames.allSatisfy { $0 > 0 })
         }
     }
 }

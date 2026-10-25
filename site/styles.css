@@ -324,3 +324,17 @@ h1, h2, h3, p { margin: 0; }
   .dlg-body { padding: 4px 18px 20px; }
   .browse-head { padding-top: 28px; }
 }
+
+/* Costume motion: the featured tile and the popup loop the costume's real frames. */
+.anim { width: 88%; aspect-ratio: 4 / 3; background-repeat: no-repeat; background-size: 100% 100%; image-rendering: pixelated; }
+.dlg-stage .anim { width: min(320px, 70vw); }
+.tile-big { will-change: auto; }
+.tile-btn[data-new] { opacity: 0; }
+.tile-btn.enter { animation: tileIn 260ms var(--ease-out) backwards; animation-delay: calc(var(--d, 0) * 40ms); }
+@keyframes tileIn { from { opacity: 0; transform: translateY(8px); } }
+dialog.dialog[open]::backdrop { animation: backdropIn 200ms ease-out; }
+@keyframes backdropIn { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .tile-btn.enter, dialog.dialog[open]::backdrop { animation: none; }
+  .tile-btn[data-new] { opacity: 1; }
+}
