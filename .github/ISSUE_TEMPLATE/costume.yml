@@ -1,0 +1,22 @@
+name: Request a costume
+description: Name a Clawd you want in the Clawdex.
+labels: [costume]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Costume name
+    validations:
+      required: true
+  - type: textarea
+    id: look
+    attributes:
+      label: What it looks like
+      description: Colors, props, pose. A rough sketch or a description both work. Clawd is a 16 by 12 pixel grid.
+    validations:
+      required: true
+  - type: input
+    id: collection
+    attributes:
+      label: Which collection
+      description: For example Animals, Food, Dev Life, Fantasy.

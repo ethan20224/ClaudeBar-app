@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaudeBar: Claude usage in your Mac menu bar</title>
+<meta name="description" content="A free, open source menu bar app that shows your Claude 5-hour and weekly limits, next to a tiny pixel creature who gets nervous before you do.">
+<meta name="theme-color" content="#15100d">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ClaudeBar: never hit your Claude limit blind">
+<meta property="og:description" content="Your 5-hour and weekly Claude usage in the menu bar, with a pixel creature who gets nervous before you do. Free and open source.">
+<meta property="og:image" content="https://ethan20224.github.io/ClaudeBar-app/assets/og.png">
+<meta property="og:url" content="https://ethan20224.github.io/ClaudeBar-app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ClaudeBar: never hit your Claude limit blind">
+<meta name="twitter:description" content="Your 5-hour and weekly Claude usage in the menu bar, with a pixel creature who gets nervous before you do.">
+<meta name="twitter:image" content="https://ethan20224.github.io/ClaudeBar-app/assets/og.png">
+<script>
+  // Set the theme before first paint so there is no flash. Storage can be blocked, so guard it.
+  (function () {
+    var theme = null;
+    try { theme = localStorage.getItem("claudebar-theme"); } catch (e) {}
+    if (theme !== "light" && theme !== "dark") {
+      theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" href="assets/fonts/Silkscreen-Bold.ttf" as="font" type="font/ttf" crossorigin>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap nav reveal" style="--i:0">
+  <a class="brand" href="#top" aria-label="ClaudeBar home">
+    <img class="sprite" id="brandSprite" src="assets/export/moods/dark/mood-idle-0.png" alt="" width="56" height="42">
+    <span class="px b">ClaudeBar</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#moods">Moods</a>
+    <a href="#clawdex">Clawdex</a>
+    <a href="#privacy">What it reads</a>
+    <a href="#install">Install</a>
+    <a href="#feedback">Feedback</a>
+    <button class="btn btn-line theme-toggle" id="themeBtn" type="button" aria-label="Switch to light mode">Light mode</button>
+    <a class="btn btn-clay" href="#install">Download</a>
+  </nav>
+</header>
+
+<main id="main">
+<section id="top" class="wrap hero">
+  <div class="hero-copy">
+    <span class="chip px reveal" style="--i:1">Free · Open source · macOS 14+</span>
+    <h1 class="px b reveal" style="--i:2">Never hit your Claude limit blind.</h1>
+    <p class="lede reveal" style="--i:3">ClaudeBar puts your 5-hour and weekly usage in the menu bar, next to a tiny pixel creature who gets nervous before you do.</p>
+    <div class="cta-row reveal" style="--i:4">
+      <a class="btn btn-clay" href="https://github.com/ethan20224/ClaudeBar-app/releases/latest/download/ClaudeBar.dmg">Download for Mac</a>
+      <a class="btn btn-line" href="https://github.com/ethan20224/ClaudeBar-app">Source on GitHub</a>
+    </div>
+    <p class="fine reveal" style="--i:5">Free, and unsigned for now, so macOS asks you to confirm the first launch. <a class="u" href="#install">Here is the one extra click.</a></p>
+  </div>
+
+  <div class="demo reveal" style="--i:3" aria-label="Interactive demo">
+    <div class="menubar">
+      <span class="label px">Your menu bar</span>
+      <div class="item">
+        <img class="sprite" id="menuSprite" src="assets/export/moods/dark/mood-idle-0.png" alt="" width="36" height="27">
+        <span id="menuLabel">38% · 3h11m</span>
+      </div>
+    </div>
+
+    <div class="popover">
+      <div class="pop-head">
+        <span class="t px">Claude</span>
+        <span class="plan px" id="planBadge">Pro</span>
+      </div>
+      <div>
+        <div class="stage" id="stage"><img class="sprite" id="stageSprite" src="assets/export/moods/dark/mood-idle-0.png" alt="Clawd, the pixel mascot" width="160" height="120"></div>
+        <p class="mood-line" style="margin-top:8px"><b>Clawd</b><span id="moodName">Idle</span></p>
+      </div>
+      <div class="window">
+        <span class="t px">5-hour window</span>
+        <div class="readout">
+          <span class="pct" id="pct" role="img" aria-label="38 percent"></span>
+          <div class="resets">
+            <span class="a px">Resets in</span>
+            <span class="b px">3h 11m</span>
+            <span class="c px">4:23 pm</span>
+          </div>
+        </div>
+        <div class="cells" id="cells" aria-hidden="true"></div>
+      </div>
+      <div class="window" style="gap:8px">
+        <div class="weekly-head"><span class="t px">Weekly</span><span class="v px">24%</span></div>
+        <div class="cells thin" id="weekCells" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <label class="px" for="usage">Drag to see Clawd react</label>
+      <input id="usage" type="range" min="0" max="100" step="1" value="38" aria-label="Pretend 5-hour usage percentage">
+      <div class="ticks" aria-hidden="true">
+        <span class="px" style="left:75%;transform:translateX(-50%)">75</span>
+        <span class="px" style="left:90%;transform:translateX(-50%)">90</span>
+        <span class="px" style="right:0">100</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="moods" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow px">Seven moods</span>
+        <h2 class="h2">Clawd never talks. He just looks how you feel.</h2>
+      </div>
+      <p class="lede">One mood at a time, always from your real usage. A warning is never hidden behind a costume.</p>
+    </div>
+    <div class="moods" id="moodsList"></div>
+  </div>
+</section>
+
+<section id="clawdex" class="section alt">
+  <div class="wrap dex">
+    <div class="dex-copy">
+      <span class="eyebrow px">The Clawdex</span>
+      <h2 class="h2"><span id="editionCount">424</span> costumes. Pull one.</h2>
+      <p class="lede" style="max-width:28em">Astronaut, detective, wizard school, bee, and hundreds more across <span id="collectionCount">26</span> collections. Wear any of them, anytime.</p>
+      <button class="btn btn-accent" id="pullBtn" type="button">Pull a random Clawd</button>
+      <dl class="facts" style="margin-bottom:0">
+        <div><dt class="px">Outfits</dt><dd>Follow the calendar and the time of day.</dd></div>
+        <div><dt class="px">Scenes</dt><dd>A treadmill when you burn fast. A wizard after 45 minutes of Claude Code.</dd></div>
+        <div><dt class="px">Cards</dt><dd>Every costume is a collectible card in five finishes. Share or save it as an image.</dd></div>
+        <div><dt class="px">Shiny</dt><dd>A rare shiny day, because why not.</dd></div>
+      </dl>
+    </div>
+    <div class="mosaic" id="mosaic" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="privacy" class="section">
+  <div class="wrap cols">
+    <div class="lead">
+      <span class="eyebrow px">Privacy, in plain words</span>
+      <h2 class="h2">What it reads, and when.</h2>
+      <p class="lede" style="max-width:26em">To show your usage, ClaudeBar needs your claude.ai login. Here is every step, so you can say no.</p>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="k px">Only on your click</span><span class="v">ClaudeBar does nothing with your browser until you press Connect. No click, no read.</span></div>
+      <div class="row"><span class="k px">Your login</span><span class="v">On Connect it looks for your claude.ai session cookie in Claude desktop, Chrome, Brave, Edge, Arc or Safari. macOS may ask for your password to unlock the browser's Safe Storage key.</span></div>
+      <div class="row"><span class="k px">Staying connected</span><span class="v">After you connect that way, ClaudeBar re-reads the login every few hours and whenever claude.ai signs you out, so it keeps working. If you paste your key yourself, it never reads a browser.</span></div>
+      <div class="row"><span class="k px">Where it lives</span><span class="v">One item in your own Keychain. Disconnect deletes it.</span></div>
+      <div class="row"><span class="k px">Who it talks to</span><span class="v">Only claude.ai, to ask for your usage. No analytics, no accounts, no telemetry.</span></div>
+      <div class="row"><span class="k px">Prefer not to?</span><span class="v">Paste your session key yourself instead. It works the same.</span></div>
+      <div class="row"><span class="k px">What can break</span><span class="v">These are the same pages claude.ai uses, not a public API. If Claude changes them, ClaudeBar pauses until it is updated.</span></div>
+      <div class="row"><span class="k px">Read it yourself</span><span class="v">Open source under MIT. Every line is on <a class="u" href="https://github.com/ethan20224/ClaudeBar-app">GitHub</a>.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="install" class="section alt">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:48px">
+      <div>
+        <span class="eyebrow px">Install</span>
+        <h2 class="h2">Three steps. One is a bit fiddly.</h2>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="num px">1</span>
+        <div class="body">
+          <span class="t px">Download</span>
+          <p>Grab ClaudeBar.dmg from the latest release. It needs macOS 14 or later.</p>
+          <a class="btn btn-clay" href="https://github.com/ethan20224/ClaudeBar-app/releases/latest/download/ClaudeBar.dmg">Download ClaudeBar.dmg</a>
+        </div>
+      </div>
+      <div class="step">
+        <span class="num px">2</span>
+        <div class="body">
+          <span class="t px">Drag to Applications</span>
+          <p>Open the disk image and drop ClaudeBar onto the Applications folder.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="num px">3</span>
+        <div class="body">
+          <span class="t px">Open it once, the careful way</span>
+          <p>ClaudeBar is not signed with an Apple developer certificate, so macOS blocks the first launch. Open System Settings, go to Privacy and Security, scroll down to the message about ClaudeBar and click Open Anyway.</p>
+          <p style="font-size:14px;color:var(--muted)">Or paste this in Terminal once:</p>
+          <div class="cmd">
+            <code id="cmdText">xattr -dr com.apple.quarantine /Applications/ClaudeBar.app</code>
+            <button class="btn btn-line" id="copyBtn" type="button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why">
+      <span class="eyebrow px">Why unsigned?</span>
+      <p>Apple charges developers a yearly fee to sign apps. ClaudeBar is free and open source, so version 1 ships unsigned. You can read every line on GitHub, or build it yourself.</p>
+    </div>
+  </div>
+</section>
+
+<section id="feedback" class="section">
+  <div class="wrap cols">
+    <div class="lead">
+      <span class="eyebrow px">Feedback</span>
+      <h2 class="h2">Help decide what Clawd does next.</h2>
+      <p class="lede" style="max-width:26em">Bugs, ideas, costume requests, or just hello. It all lives on GitHub, so you need a free account.</p>
+    </div>
+    <div class="links">
+      <a class="link-row" href="https://github.com/ethan20224/ClaudeBar-app/issues/new?template=bug.yml"><span><span class="t px">Report a bug</span><span class="d">Something broke, or looks wrong.</span></span><span class="go px">Open on GitHub</span></a>
+      <a class="link-row" href="https://github.com/ethan20224/ClaudeBar-app/issues/new?template=feature.yml"><span><span class="t px">Suggest a feature</span><span class="d">Something ClaudeBar should do.</span></span><span class="go px">Open on GitHub</span></a>
+      <a class="link-row" href="https://github.com/ethan20224/ClaudeBar-app/issues/new?template=costume.yml"><span><span class="t px">Request a costume</span><span class="d">Name a Clawd you want in the Clawdex.</span></span><span class="go px">Open on GitHub</span></a>
+      <a class="link-row" href="https://github.com/ethan20224/ClaudeBar-app/discussions"><span><span class="t px">Say anything</span><span class="d">Questions, praise, wild ideas. Start a discussion.</span></span><span class="go px">Open on GitHub</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap made">
+    <img class="sprite" id="madeSprite" src="assets/export/editions/dark/wizard-school.png" alt="Clawd in a wizard-school costume" width="160" height="120">
+    <div class="txt">
+      <h2 class="h2">Made entirely with Claude Code.</h2>
+      <p>I don't write code. Every line of ClaudeBar was written by Claude Code, and I just kept asking for better.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="brand"><img class="sprite" id="footSprite" src="assets/export/moods/dark/mood-idle-0.png" alt="" width="48" height="36"><span class="px b">ClaudeBar</span></div>
+      <div class="foot-links">
+        <a href="https://github.com/ethan20224/ClaudeBar-app">GitHub</a>
+        <a href="https://github.com/ethan20224/ClaudeBar-app/releases">Releases</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#privacy">Privacy</a>
+        <a href="https://github.com/ethan20224/ClaudeBar-app/blob/main/LICENSE">MIT license</a>
+      </div>
+    </div>
+    <p class="disclaimer">Unofficial. Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic. Some costumes are pixel tributes to existing franchises and brands, and all such names belong to their owners. Pixel font: Silkscreen, SIL Open Font License.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

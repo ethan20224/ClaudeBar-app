@@ -1,0 +1,10 @@
+.build/
+.DS_Store
+.shared/
+dist/
+.design-mocks/
+.opencode/
+.playwright-mcp/
+.superpowers/
+iOS/
+launch/

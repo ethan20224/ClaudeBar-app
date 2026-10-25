@@ -1,0 +1,3843 @@
+{
+  "counts" : {
+    "collections" : 26,
+    "editions" : 424,
+    "moods" : 7
+  },
+  "editions" : [
+    {
+      "blurb" : "Long beard, raised brows, and a staff. Has seen every stack trace.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "wise-sage",
+      "name" : "Wise Sage",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "White cap, navy coat, brass buttons. Nothing sinks on this ship.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "ocean-captain",
+      "name" : "Ocean Liner Captain",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Went off-script. Red eyes, loose wires, a spark where an arm used to be.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "rogue-robot",
+      "name" : "Rogue Robot",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Round glasses, a striped scarf, and a wand with a mind of its own.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "wizard-school",
+      "name" : "Wizard School",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Helmet crest, long cloak, and a humming blade of pure light.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "space-knight",
+      "name" : "Space Knight",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A marigold garland, a tiny flame, and rangoli colors on the floor.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "diwali",
+      "name" : "Diwali Night",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A red-and-gold cap and a swaying lantern for good luck.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "lunar-new-year",
+      "name" : "Lunar New Year",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Antlers, a glowing red nose, and a scarf for the long flight.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "reindeer",
+      "name" : "Reindeer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Crisp, shiny, and one bite away from a great idea. The fruit, not the logo.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "apple",
+      "name" : "Red Apple",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Extra cheese, double pepperoni, a perfectly golden crust.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "pizza",
+      "name" : "Pizza Slice",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Explain your bug to it. It never interrupts, and it is always right.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "rubber-duck",
+      "name" : "Rubber Duck",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Deerstalker cap, magnifying glass, and a very small suspect on the floor.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "bug-hunter",
+      "name" : "Bug Hunter",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sharp ears, a white muzzle, and a tail that gives it away.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "fox",
+      "name" : "Fox",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Black patches, round ears, and an unbothered attitude.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "panda",
+      "name" : "Panda",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pointed ears, whiskers, and a tail that has opinions.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "cat",
+      "name" : "Cat",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tall hat, clean apron, and a spatula. Dinner is handled.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "chef",
+      "name" : "Chef",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A bow tie, a keyboard, and little notes drifting up while the hands play.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "pianist",
+      "name" : "Pianist",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Leather cap, goggles pushed up, a long white scarf, and a propeller plane overhead.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "ww2-pilot",
+      "name" : "WWII Pilot",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A full suit, a tether to the ship, and the whole Earth hanging in the corner.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "space-walker",
+      "name" : "Space Walker",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "One small step: footprints, a planted flag, and home glowing overhead.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "moon-landing",
+      "name" : "Moon Landing",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A feathered headband, long pearls, a fringe that swings, and champagne for everyone.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "roaring-twenties",
+      "name" : "Roaring Twenties",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A grand liner, a lifebuoy ring, and an iceberg that looks suspiciously large.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "maiden-voyage",
+      "name" : "Maiden Voyage",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Round glasses, a lightning scar, a red and gold scarf, a wand, and a white owl on post duty.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-harry-potter",
+      "name" : "Harry Potter",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Four funnels, a black hull, and an iceberg dead ahead. Everyone to the bow.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-titanic",
+      "name" : "Titanic",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Silver, smooth, and missing exactly one bite. Think different.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-apple",
+      "name" : "Apple",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A hooded robe, a humming blade, and a small droid that beeps in the background.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-star-wars-jedi",
+      "name" : "Star Wars Jedi",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Amber, a raptor claw, and a very large footprint rippling a water cup.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-jurassic-park",
+      "name" : "Jurassic Park",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A puffy vest, a silver time machine, and fire trails at 88 miles per hour.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-back-to-the-future",
+      "name" : "Back to the Future",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A khaki jumpsuit, a proton pack, and a friendly green slimer.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-ghostbusters",
+      "name" : "Ghostbusters",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Black coat, round shades, and green code falling through the dark.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-the-matrix",
+      "name" : "The Matrix",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "White and green suit, purple trim, and wings out. To infinity.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-buzz-lightyear",
+      "name" : "Buzz Lightyear",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Trumpet ears, a brown vest, and an onion with layers.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-shrek",
+      "name" : "Shrek",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "An ice-blue gown, a side braid, and snow that obeys her.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-frozen-elsa",
+      "name" : "Frozen Elsa",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Red mask, blue suit, and a web line to the nearest rooftop.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-spider-man",
+      "name" : "Spider-Man",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Pointed cowl, a long cape, and a yellow signal in the night sky.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-batman",
+      "name" : "Batman",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Red and gold armor, a glowing chest reactor, and repulsor palms.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-iron-man",
+      "name" : "Iron Man",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A tall grey hat, a long beard, and a staff that says you shall not pass.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-gandalf",
+      "name" : "Gandalf",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Beskar helmet with a T-shaped visor and a small green passenger.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-the-mandalorian",
+      "name" : "The Mandalorian",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Black helm, a red saber, and very heavy breathing.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-darth-vader",
+      "name" : "Darth Vader",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Yellow capsule, denim overalls, one big goggle, and a banana.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-minion",
+      "name" : "Minion",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A grey fin cutting the surface, and a theme you hear before you see.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-jaws",
+      "name" : "Jaws",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Wrinkled brown friend, a glowing finger, and a bike in the moonlight.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-et",
+      "name" : "E.T.",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Fedora, a leather jacket, a coiled whip, and a boulder behind him.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-indiana-jones",
+      "name" : "Indiana Jones",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Tricorn hat, beaded braids, a red bandana, and the best pirate you have heard of.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-jack-sparrow",
+      "name" : "Jack Sparrow",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Two tight black braids, a white collar, and zero visible enthusiasm.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-wednesday",
+      "name" : "Wednesday",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Big round ears, red shorts, yellow shoes, and white gloves.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-mickey-mouse",
+      "name" : "Mickey Mouse",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blinking alphabet fairy lights, a stack of waffles, and red thunder from the Upside Down.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-stranger-things",
+      "name" : "Stranger Things",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Red cap, big mustache, and a jump that clears every pipe.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-super-mario",
+      "name" : "Super Mario",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Yellow fur, black-tipped ears, red cheeks, and a zigzag tail full of sparks.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-pikachu",
+      "name" : "Pikachu",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Green tunic, pointed cap, and a sword with a shield to match.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-zelda-hero",
+      "name" : "Zelda Hero",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blocky, green, and a little too quiet. Ssssss.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-minecraft-creeper",
+      "name" : "Minecraft Creeper",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Spiky blue quills, red sneakers, and a trail of gold rings.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-sonic",
+      "name" : "Sonic",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A yellow circle with an appetite, a pink ghost in pursuit, and a row of dots.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-pac-man",
+      "name" : "Pac-Man",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Four squares at a time, rotating down. Clear the line and breathe.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-tetris",
+      "name" : "Tetris",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A bean in a spacesuit with a cyan visor and a tiny backpack. Suspicious.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-among-us",
+      "name" : "Among Us",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Studs on top, snaps into anything. Step on one at your own risk.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-lego",
+      "name" : "Lego",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Red can, white ribbon, and bubbles rising from a fresh pop.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-coca-cola",
+      "name" : "Coca-Cola",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A red carton of hot golden fries under a pair of golden arches.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-mcdonalds",
+      "name" : "McDonald's",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A black swoosh across the chest and a shoebox of speed.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-nike",
+      "name" : "Nike",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A big red ribbon N on black, and one more episode before bed.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-netflix",
+      "name" : "Netflix",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A green disc with three curved sound waves, and headphones for the rest.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-spotify",
+      "name" : "Spotify",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blue, red, yellow, green. Four dots that know the answer to everything.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-google",
+      "name" : "Google",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Silent, silver, and a charge cable plugged in for the night.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-tesla",
+      "name" : "Tesla",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Two sticks, a d-pad, and four symbol buttons that never rest.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-playstation",
+      "name" : "PlayStation",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A screen in the middle, a red controller on one side and a blue one on the other.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-nintendo-switch",
+      "name" : "Nintendo Switch",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A paper cup with a green sleeve, a plastic lid, and a name misspelled on the side.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-starbucks",
+      "name" : "Starbucks",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Big eyes, orange feet, and a daily streak you absolutely cannot break.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-duolingo",
+      "name" : "Duolingo",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A blurple smiley with a headset, always in voice chat with somebody.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-discord",
+      "name" : "Discord",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A purple chat bubble, a glowing LIVE light, and a very patient audience.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-twitch",
+      "name" : "Twitch",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Six colors, nine squares a face, and one very stubborn last corner.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-rubiks-cube",
+      "name" : "Rubik's Cube",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A white kitty with a big red bow, whiskers, and no mouth. Somehow still friendly.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-hello-kitty",
+      "name" : "Hello Kitty",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Heavy brows, a yellow beak, and a slingshot that means business.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-angry-birds",
+      "name" : "Angry Birds",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blue and yellow tote bag, an Allen key in hand, and a hot plate of meatballs.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-ikea",
+      "name" : "IKEA",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blue and silver quartered can, two charging red bulls, and golden wings.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-red-bull",
+      "name" : "Red Bull",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A white paper boat hat with a red stripe, a double-double, and crossed palms.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-in-n-out",
+      "name" : "In-N-Out",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "White suit, black glasses, a string bow tie, and a red-and-white striped bucket.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-kfc",
+      "name" : "KFC",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Green-trimmed paper cap, a warm glazed ring, and the neon HOT NOW sign lit up.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-krispy-kreme",
+      "name" : "Krispy Kreme",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Wrapped tight in shiny silver burrito foil with a smoky red jalapeno crest.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-chipotle",
+      "name" : "Chipotle",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Stamped dark cocoa wafers with a double-stuf ribbon of sweet white creme.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-oreo",
+      "name" : "Oreo",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A glossy hazelnut-cocoa jar with a white ribbed lid and red-lettered label.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-nutella",
+      "name" : "Nutella",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A glorious brown handlebar mustache, a crisp red bow tie, and a stack of crisps.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-pringles",
+      "name" : "Pringles",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Glossy red candy shell, a white M stamped on the front, and cartoon white gloves.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-mms",
+      "name" : "M&M's",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Bright red snack box and crisp biscuit sticks dipped in chocolate and strawberry.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-pocky",
+      "name" : "Pocky",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Caramelized brown-sugar tiger stripes, chewy tapioca pearls, and a wide straw.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-tiger-sugar-boba",
+      "name" : "Tiger Sugar Boba",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Cream pile fleece vest with anavy pocket and the jagged Fitz Roy sunset crest.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-patagonia",
+      "name" : "Patagonia",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Crisp red box logo across the chest and a fresh maple deck under the arm.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-supreme",
+      "name" : "Supreme",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Ventilated lime foam, sport-mode heel strap engaged, and tiny Jibbitz on top.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-crocs",
+      "name" : "Crocs",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Emerald dial, fluted 18k gold bezel, and the five-pointed coronet on top.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-rolex",
+      "name" : "Rolex",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Rosso Corsa bodywork, the yellow prancing-horse shield, and a checkered flag.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-ferrari",
+      "name" : "Ferrari",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Insignia blue sphere, a sweeping red vector chevron, and stars in orbit.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-nasa",
+      "name" : "NASA",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Pullman brown uniform, a gold shield on the cap, and a cardboard parcel at the door.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-ups-delivery",
+      "name" : "FedEx and UPS",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Classic five-color spectrum stripe and a white-bordered instant print.",
+      "collection" : "franchise",
+      "collectionTitle" : "Movies & Brands",
+      "id" : "fr-polaroid",
+      "name" : "Polaroid",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Fedora, trench coat, and a pipe. The case is practically closed.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-detective",
+      "name" : "Detective",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Mask, cape, and a chest emblem. Rescues pull requests from certain doom.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-caped-hero",
+      "name" : "Caped Hero",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "High collar, slicked hair, and a bat or two. Only works night shifts.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-vampire",
+      "name" : "Vampire Count",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tricorn hat, eyepatch, and a parrot with strong opinions about the wi-fi.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-pirate-captain",
+      "name" : "Pirate Captain",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Crested helmet, calm focus, and a blade that never needs a rebase.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-samurai",
+      "name" : "Samurai",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Horned helmet, braided beard, and a shield that has seen things.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-viking",
+      "name" : "Viking",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Plumed helm, silver plate, and a shield with a very bold cross.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-knight",
+      "name" : "Castle Knight",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wide hat, red bandana, and a tumbleweed that follows the standup.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-cowboy",
+      "name" : "Cowboy",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Bubble helmet, a tiny flag, and zero gravity to blame for the typos.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-astronaut",
+      "name" : "Astronaut",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Dark shades, sharp tuxedo, and a briefcase of very discreet gadgets.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-secret-agent",
+      "name" : "Secret Agent",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pink mohawk, dark shades, and a guitar solo that nobody asked for.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-rock-star",
+      "name" : "Rock Star",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A gold crown, an ermine robe, and a very large to-do list.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-king",
+      "name" : "King",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tall tiara, a pink gem, and a rose. Rules with grace and unit tests.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-queen",
+      "name" : "Queen",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wild hair, goggles, a bubbling flask. It was only supposed to be a small experiment.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-mad-scientist",
+      "name" : "Mad Scientist",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wrapped up in work and bandages. Tomb deadlines are brutal.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-mummy",
+      "name" : "Mummy",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Fur tunic, big club, and a small campfire. Invented the standup.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-caveman",
+      "name" : "Caveman",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Red coat, tall hat, and a curled mustache. Welcome to the greatest standup on earth.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-ringmaster",
+      "name" : "Ringmaster",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A top hat, a wand, and a rabbit that is absolutely not on payroll.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-magician",
+      "name" : "Magician",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Monocle, bow tie, and a silver cloche. Your build will be served shortly.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-robot-butler",
+      "name" : "Robot Butler",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Charcoal hood, red scarf, and a throwing star. You never saw the merge.",
+      "collection" : "characters",
+      "collectionTitle" : "Characters",
+      "id" : "b1-shadow-ninja",
+      "name" : "Shadow Ninja",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Small wings, big attitude, and a little smoke when a build fails.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-dragon",
+      "name" : "Dragon",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Flowing hair, a shell top, and a tail that makes waves.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-mermaid",
+      "name" : "Mermaid",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Came in peace, stayed for the snacks. Big eyes, bigger heart.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-alien",
+      "name" : "Friendly Alien",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Parked the flying saucer. Mind the glow, it has a mind of its own.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-saucer-pilot",
+      "name" : "Saucer Pilot",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Half human, half hardware, fully caffeinated.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-cyborg",
+      "name" : "Cyborg",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sharp ears, steady aim, and a green hood for the deep woods.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-elf-archer",
+      "name" : "Elf Archer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Hard hat, headlamp, and a beard that has seen things deep underground.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-dwarf-miner",
+      "name" : "Dwarf Miner",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Lives under a bridge, charges one riddle per crossing.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-bridge-troll",
+      "name" : "Bridge Troll",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A spiral horn, a rainbow mane, and a sparkle in every step.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-unicorn",
+      "name" : "Unicorn",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Rises from every crash, a little warmer each time.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-phoenix",
+      "name" : "Phoenix",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Eight arms, zero chill. The sea rules, and so does your sprint board.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-kraken",
+      "name" : "Kraken",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Brass goggles and a swirling portal. Back before the deploy finishes.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-time-traveler",
+      "name" : "Time Traveler",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Full helmet, glowing visor, jetpack. Always gets the bug.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-bounty-hunter",
+      "name" : "Bounty Hunter",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Orange flight helmet, goggles up, and one very long shot at glory.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-rebel-pilot",
+      "name" : "Rebel Pilot",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Beeps, rolls, and fixes everything. Mostly. Loyal to a fault.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-droid-sidekick",
+      "name" : "Droid Sidekick",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Moss beard, leaf hat, and a staff that hums with spring.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-forest-wizard",
+      "name" : "Forest Wizard",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Spooky hood, skull staff, glowing eyes. Secretly returns every shopping cart.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-necromancer",
+      "name" : "Hooded Sorcerer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Mossy, mighty, and glowing with an old rune. Slow to move, fast to forgive.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-golem",
+      "name" : "Stone Golem",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Gossamer wings, a flower crown, and a glittering trail of good ideas.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-fairy",
+      "name" : "Fairy",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A flickering cyan projection. Mostly there, and you can see right through it.",
+      "collection" : "fantasy",
+      "collectionTitle" : "Fantasy & Sci-fi",
+      "id" : "b2-hologram",
+      "name" : "Hologram",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Picnic under the cherry trees in Japan, where everyone watches the blossoms fall.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-hanami",
+      "name" : "Hanami",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A happi coat, a headband, and a paper fan for the summer festival.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-matsuri",
+      "name" : "Matsuri",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A bright jacket with a ribbon bow and a classic black gat hat from Korea.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-hanbok",
+      "name" : "Hanbok Day",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Lion and dragon dancers bring luck at New Year parades. This one has a red head and a long tail.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-dragon-dance",
+      "name" : "Dragon Dance",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Mooncakes, a glowing lantern, and a big bright full moon to share with family.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-mid-autumn",
+      "name" : "Mid-Autumn",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "The spring festival of colors, where friends toss bright powder and laugh.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-holi",
+      "name" : "Holi Colors",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Classical Indian dancers wear jingling ankle bells to keep time with the music.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-ankle-bells",
+      "name" : "Ankle Bells",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Thai New Year means water fights, flower garlands, and cooling off together.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-songkran",
+      "name" : "Songkran Splash",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "The woven non la shades farmers and market sellers all over Vietnam.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-non-la",
+      "name" : "Conical Hat",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A glowing star lantern from the Philippines, hung up for the long Christmas season.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-parol",
+      "name" : "Parol Star",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A batik shirt and a bronze gong, ready to play Indonesia's shimmering orchestra music.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-gamelan",
+      "name" : "Gamelan Night",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tulips grew in old Turkish gardens, and tea comes in tiny waisted glasses.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-tulip-tea",
+      "name" : "Tulip Tea",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Persian New Year welcomes spring with green sprouts and a goldfish in a bowl.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-nowruz",
+      "name" : "Nowruz Table",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Festive lanterns and twinkling stars light up the streets during Ramadan and Eid.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-eid-lantern",
+      "name" : "Eid Lantern",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A red fez with a swinging tassel and a high-poured pot of sweet Moroccan mint tea.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-fez-tea",
+      "name" : "Fez and Mint Tea",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A striped headcloth, a warm sun, and a little pyramid to go and discover.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-desert-explorer",
+      "name" : "Desert Explorer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A bold woven kente-style scarf and a talking drum that carries a whole conversation.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-kente-drum",
+      "name" : "Kente and Drum",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "In Ethiopia, coffee is roasted and poured fresh from a clay jebena, with incense and friends.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-jebena",
+      "name" : "Coffee Ceremony",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A wide hat, binoculars, and sharp eyes for spotting elephants on the Kenyan plains.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-safari-guide",
+      "name" : "Safari Guide",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "South Africa's national flower, a spiky pink protea, perched on top like a crown.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b3-protea",
+      "name" : "Protea Crown",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Marigold crown and friendly painted eyes, joining the colorful Mexican celebration of loved ones.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-dia-de-muertos",
+      "name" : "Dia de Muertos",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A wide embroidered sombrero and a little guitar, ready to serenade the whole plaza.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-mariachi",
+      "name" : "Mariachi",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A tall feather crown and a shaker, dancing along with Rio's big street party.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-carnival",
+      "name" : "Carnival Samba",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Flat-brimmed hat, a red neckerchief and a gourd of mate, shared on the Argentine plains.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-gaucho",
+      "name" : "Gaucho",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A hand-knit chullo with earflaps and a pompom, plus pan pipes for the mountain air.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-chullo",
+      "name" : "Andean Chullo",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A cozy knit toque, buffalo-plaid scarf and fresh maple syrup from a Canadian sugar shack.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-canada",
+      "name" : "Maple Toque",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A blue tam with a red pompom, a tartan scarf and bagpipes echoing over the glen.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-highland-piper",
+      "name" : "Highland Piper",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A tidy bowler hat and a steaming cup, because the English afternoon always has room for tea.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-tea-time",
+      "name" : "Tea Time",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A tall bearskin hat and a scarlet tunic, standing very still outside the palace gates.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-palace-guard",
+      "name" : "Palace Guard",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A tilted beret, a fresh baguette and a view of the tower on a sunny morning in Paris.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-parisian",
+      "name" : "Parisian",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A straw boater, a striped shirt and a long oar, gliding through the canals of Venice.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-gondolier",
+      "name" : "Gondolier",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A green felt hat with a feather, blue-and-white checks and a warm Bavarian pretzel.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-oktoberfest",
+      "name" : "Oktoberfest",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A spring tulip, bright wooden clogs and a windmill turning slowly in the Dutch breeze.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-tulip-windmill",
+      "name" : "Tulips and Clogs",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "An edelweiss in the hair and a long alphorn echoing between snowy Swiss peaks.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-alpine",
+      "name" : "Alpine Alphorn",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A red rose in the hair, a ruffled dress and a fluttering fan for a passionate Spanish dance.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-flamenco",
+      "name" : "Flamenco",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A leafy olive wreath, a white drape and a painted vase, in the spirit of ancient Greece.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-olive-wreath",
+      "name" : "Olive Wreath",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A fluffy fur hat with earflaps, a blue scarf and a tiny nesting doll, ready for a snowy walk.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-ushanka",
+      "name" : "Winter Ushanka",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A wide-brimmed hat and a boomerang, with red desert dust and a few friendly flies.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-outback",
+      "name" : "Outback",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A shy brown kiwi with a long beak and a silver fern, a little local from Aotearoa New Zealand.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-kiwi",
+      "name" : "Kiwi Bird",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A flower lei, a hibiscus in the hair and a little ukulele, welcoming everyone with aloha.",
+      "collection" : "cultures",
+      "collectionTitle" : "Around the World",
+      "id" : "b4-aloha",
+      "name" : "Aloha Lei",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Top hat, carrot nose, and a very cool head on its shoulders.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-snowman",
+      "name" : "Snowman",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Baked golden, iced with care, and absolutely not running from you.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-gingerbread",
+      "name" : "Gingerbread",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Lit up, loaded with ornaments, and guarding a pile of presents.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-christmas-tree",
+      "name" : "Christmas Tree",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big white beard, bigger sack, one very long list.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-santa-claus",
+      "name" : "Santa Claus",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A glowing menorah on top and a dreidel mid-spin.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-menorah",
+      "name" : "Festival of Lights",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Seven candles, kente stripes, and a table set for community.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-kinara",
+      "name" : "Kinara Night",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Floppy ears, twitchy nose, and a basket of very suspicious eggs.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-easter-bunny",
+      "name" : "Easter Bunny",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Painted, polka-dotted, and cracking under the pressure of spring.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-easter-egg",
+      "name" : "Hatching Egg",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Carved grin, candle glow, and a stem that has seen things.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-jack-o-lantern",
+      "name" : "Jack-o-Lantern",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Two eyeholes, one sheet, zero actual haunting experience.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-ghost",
+      "name" : "Bedsheet Ghost",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Moonlit fur, gold eyes, and a bell that does not fool anyone.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-midnight-cat",
+      "name" : "Midnight Cat",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tiny wings, golden halo, and unnervingly good aim.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-cupid",
+      "name" : "Cupid",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A full fan of autumn feathers and no idea what day it is.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-turkey",
+      "name" : "Turkey Day",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Blue marble, green continents, and a brave little sprout on top.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-earth-day",
+      "name" : "Earth Day",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Four candles, thick frosting, and a wish you are not supposed to share.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-birthday-cake",
+      "name" : "Birthday Cake",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Straw hat, shades, a surfboard, and a strict no-deploy policy.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-beach-day",
+      "name" : "Beach Day",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Knit beanie, wool scarf, and a mug with marshmallows on top.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-hot-cocoa",
+      "name" : "Cozy Cocoa",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A flower crown, a passing butterfly, and grass that finally turned green.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-spring-crown",
+      "name" : "Spring Bloom",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Yellow raincoat, red umbrella, and a deep respect for puddles.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-rainy-day",
+      "name" : "Rainy Day",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Midnight sky, a sparkler in hand, and the whole town going boom.",
+      "collection" : "holidays",
+      "collectionTitle" : "Holidays",
+      "id" : "b5-fireworks",
+      "name" : "Fireworks Night",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pink icing, rainbow sprinkles, and a hole where the worries go.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-donut",
+      "name" : "Donut",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A silky slice over a pillow of rice, with a dab of wasabi for courage.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-nigiri",
+      "name" : "Salmon Nigiri",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Crunchy shell, fresh lettuce, and zero regrets on Tuesday.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-taco",
+      "name" : "Taco",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Milk tea, a fat straw, and pearls that always know where you are.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-boba",
+      "name" : "Boba Tea",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Strawberry scoop, a cherry on top, and a race against the sun.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-ice-cream",
+      "name" : "Ice Cream Cone",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sesame bun, melty cheese, and a stack taller than the plan.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-burger",
+      "name" : "Cheeseburger",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Snug in its bun with a zigzag of mustard. A ballpark classic.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-hot-dog",
+      "name" : "Hot Dog",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Slurp-ready noodles, a soft egg, and steam that smells like home.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-ramen",
+      "name" : "Ramen Bowl",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A swirl of frosting, a cherry, and a wrapper full of good news.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-cupcake",
+      "name" : "Cupcake",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Juicy red, a crisp green rind, and seeds for spitting contests.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-watermelon",
+      "name" : "Watermelon Slice",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Peeled halfway, spotted with character, and extremely slip-prone.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-banana",
+      "name" : "Banana",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Perfectly ripe for about four minutes. Pit included.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-avocado",
+      "name" : "Avocado",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Full of holes and full of confidence. Mind the mouse.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-cheese",
+      "name" : "Cheese Wedge",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Striped bucket, fluffy kernels, and the movie starts now.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-popcorn",
+      "name" : "Popcorn Bucket",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A heart in the foam and enough steam to start the morning.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-latte",
+      "name" : "Latte",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Layers upon layers, buttery to the tips, flaky in all the right ways.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-croissant",
+      "name" : "Croissant",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pleated by hand, steamed with care, and gone in one bite.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-dumpling",
+      "name" : "Dumpling",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Twisted, salty, and honestly a bit of a knot of feelings.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-pretzel",
+      "name" : "Pretzel",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Warm from the oven, gooey chips, and a glass of milk on standby.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-cookie",
+      "name" : "Chocolate Chip Cookie",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sweet, a little tart, and wearing a tiny green hat.",
+      "collection" : "food",
+      "collectionTitle" : "Food",
+      "id" : "b6-strawberry",
+      "name" : "Strawberry",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Round glasses, a crescent moon, and a commit pushed at 3 a.m.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-night-owl",
+      "name" : "Night Owl",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Hair on end, clock ringing, and the demo is in ten minutes.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-deadline-panic",
+      "name" : "Deadline Panic",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Nose cone on, fins out, flame lit. Merging straight to main.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-ship-it",
+      "name" : "Ship It",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Slate body, a blinking underscore, and a window ready for any command.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-prompt",
+      "name" : "Prompt Cursor",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Two branches, one line, zero chance of a clean rebase.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-merge-conflict",
+      "name" : "Merge Conflict",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Fourth cup, wide eyes, and the code is somehow getting faster.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-coffee-overdose",
+      "name" : "Coffee Overdose",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A tiny second Clawd peeking in with a very good idea.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-pair-programmer",
+      "name" : "Pair Programmer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Fluffy, scalable, and somehow always someone else's computer.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-cloud",
+      "name" : "Cloud",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "It is not a bug, it is a feature. This one even says hello.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-friendly-bug",
+      "name" : "Friendly Bug",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A cape, a mask, and a patch shipped before anyone read the advisory.",
+      "collection" : "devLife",
+      "collectionTitle" : "Dev Life",
+      "id" : "b7-zero-day",
+      "name" : "Zero Day Hero",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Head mirror, stethoscope, and a calm voice for any stack trace.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-doctor",
+      "name" : "Doctor",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Red helmet, reflective stripe, and a hose aimed at tiny fires.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-firefighter",
+      "name" : "Firefighter",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Captain's cap, wing pin, and a smooth ride at cruising altitude.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-pilot",
+      "name" : "Pilot",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Lab coat, goggles, and a beaker that is probably fine.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-scientist",
+      "name" : "Scientist",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Straw hat, watering can, and a sprout that is clearly on schedule.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-gardener",
+      "name" : "Gardener",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big headphones, spinning vinyl, and a beat dropped right on the deploy.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-dj",
+      "name" : "DJ",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A red bandana, a loud riff, and an encore that is not scheduled.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-guitarist",
+      "name" : "Guitarist",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A beret, a wet brush, and splashes that are definitely intentional.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-painter",
+      "name" : "Painter",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Headset on, controller out, and exactly one life left.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-gamer",
+      "name" : "Gamer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sweatband, fresh sneakers, and a personal best every Tuesday.",
+      "collection" : "jobs",
+      "collectionTitle" : "Jobs & Hobbies",
+      "id" : "b7-runner",
+      "name" : "Runner",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tall ears, twitchy nose, and a hop in every step.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-bunny",
+      "name" : "Bunny",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Dressed for dinner at all times, and very sure about the waddle.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-penguin",
+      "name" : "Penguin",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big eyes, bigger mouth, and a tongue that always finds the fly.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-frog",
+      "name" : "Frog",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Fin out, teeth showing, and absolutely no small talk.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-shark",
+      "name" : "Shark",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wide eyes, ear tufts, and an opinion about your late-night commits.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-owl",
+      "name" : "Owl",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Back plates, a swishy tail, and an ancient love of snacks.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-dino",
+      "name" : "Dino",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Eight arms, zero free hands. Somehow still multitasking.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-octopus",
+      "name" : "Octopus",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Round ears, honey on the mind, and a hug that ends arguments.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-bear",
+      "name" : "Bear",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A mane that enters the room first, and a very regal yawn.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-lion",
+      "name" : "Lion",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big ears, a trunk with a mind of its own, and a perfect memory.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-elephant",
+      "name" : "Elephant",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Banana radar, a curly tail, and zero respect for gravity.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-monkey",
+      "name" : "Monkey",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Floppy ears, a snout for snacks, and a very curly opinion.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-pig",
+      "name" : "Pig",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Red comb, orange beak, and a strong case for breakfast.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-chicken",
+      "name" : "Chicken",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Spots, horns, and a bell that announces every deploy.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-cow",
+      "name" : "Cow",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A cloud of wool, a soft little face, and a calm that spreads.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-sheep",
+      "name" : "Sheep",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Head in the clouds, spots on everything, and the best view in town.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-giraffe",
+      "name" : "Giraffe",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Slow, steady, and carrying the whole house on its back.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-turtle",
+      "name" : "Turtle",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Stripes, a stinger, and a buzz that means business.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-bee",
+      "name" : "Bee",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big painted wings and a quick flutter. Quite the transformation.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-butterfly",
+      "name" : "Butterfly",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big ears, tiny fangs, and a strict nocturnal schedule.",
+      "collection" : "animals",
+      "collectionTitle" : "Animals",
+      "id" : "b8-bat",
+      "name" : "Bat",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A little cloud of maybes floats up while the answer takes shape.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-thinking-cloud",
+      "name" : "Thinking Cloud",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Nom nom nom. Every little token is delicious and none go to waste.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-token-muncher",
+      "name" : "Token Muncher",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "The window is getting tight. Squeeze in one more file, just one.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-context-squish",
+      "name" : "Context Squish",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Clawd delegates. Three tiny Clawds trot behind, each on an important errand.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-sub-agents",
+      "name" : "Sub-agents",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Confident, swirly, and absolutely sure that function exists.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-hallucination",
+      "name" : "Hallucination",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Hard hat on, cursor blinking. Measure twice, prompt once.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-prompt-engineer",
+      "name" : "Prompt Engineer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A big red stop sign and a deep breath. Back in a moment, promise.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-rate-limited",
+      "name" : "Rate Limited",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Golden sand trickling down until the five-hour window resets.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-hourglass",
+      "name" : "Hourglass",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Four glowing bars on the chest and a terminal cap on top.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-battery",
+      "name" : "Battery Pack",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Cool cyan in the morning, warm red by the end of a long sprint.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-thermometer",
+      "name" : "Thermometer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Waxing, waning, and keeping watch over every late-night session.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-moon-phase",
+      "name" : "Moon Phase",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Striped pajamas and a sleepy cap on one side, business tie on the other.",
+      "collection" : "claudeLife",
+      "collectionTitle" : "Claude Life",
+      "id" : "b9-night-shift",
+      "name" : "Night Shift",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Glasses on, a book open, and one more chapter before bed.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-reading-nook",
+      "name" : "Reading Nook",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Click, click, click. A scarf grows slowly and so does the calm.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-knitting",
+      "name" : "Knitting",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A tent, a crackling fire, and sparks drifting up into the stars.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-camping",
+      "name" : "Camping",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A checkered blanket, a basket, and the sun doing its very best.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-picnic",
+      "name" : "Picnic",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wrapped to the chin, perfectly warm, and not getting up today.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-blanket-burrito",
+      "name" : "Blanket Burrito",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A leafy sprout on the head and a watering can for everyone else.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-plant-parent",
+      "name" : "Plant Parent",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "One small flame, long shadows, and a very quiet evening.",
+      "collection" : "cozy",
+      "collectionTitle" : "Cozy",
+      "id" : "b9-candle-night",
+      "name" : "Candle Night",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Number nine jersey and a ball at the feet. Goal incoming.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-striker",
+      "name" : "Striker",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Headband on, ball up, and nothing but net.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-hoops",
+      "name" : "Hoops",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Visor down, racket ready, and a ball that never lands.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-tennis-ace",
+      "name" : "Tennis Ace",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Riding a wave and a good mood. Hang loose.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-surfer",
+      "name" : "Surfer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Backwards cap, a deck, and a trick that almost landed.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-skater",
+      "name" : "Skater",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Goggles, a bobble hat, and a very fresh slope.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-skier",
+      "name" : "Skier",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Red gloves, quick feet, and a calm game face.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-boxer",
+      "name" : "Boxer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Aero helmet, two wheels, and the wind at its back.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-cyclist",
+      "name" : "Cyclist",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Flat cap, one club, and a hole in one waiting to happen.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-golfer",
+      "name" : "Golfer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Helmet, rope, and a summit that is closer than it looks.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-climber",
+      "name" : "Climber",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Heavy plates and a heavier grin. Never skips arm day.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-weightlifter",
+      "name" : "Weightlifter",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big gloves, wide stance, and nothing gets past.",
+      "collection" : "sports",
+      "collectionTitle" : "Sports",
+      "id" : "b10-goalie",
+      "name" : "Goalie",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sideways walker with two big claws and a lot to say.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-crab-cousin",
+      "name" : "Crab Cousin",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Bright red shell and snappy claws. Dinner has other plans.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-lobster",
+      "name" : "Lobster",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Soft glow, trailing tentacles, and no particular plans.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-jellyfish",
+      "name" : "Jellyfish",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Puffs up when startled. Looks twice as brave, honestly.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-pufferfish",
+      "name" : "Pufferfish",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Curly tail, little snout, and a very gentle hover.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-seahorse",
+      "name" : "Seahorse",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Lights its own way through the deep, with a grin to match.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-anglerfish",
+      "name" : "Anglerfish",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "The unicorn of the sea, tusk first and unbothered.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-narwhal",
+      "name" : "Narwhal",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big, calm, and humming something low. Spouts when happy.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-whale",
+      "name" : "Whale",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Orange with white stripes, at home in any anemone.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-clownfish",
+      "name" : "Clownfish",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Five arms, no worries, and a beach all to itself.",
+      "collection" : "sea",
+      "collectionTitle" : "Under the Sea",
+      "id" : "b10-starfish",
+      "name" : "Starfish",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Nine tails, a sly smile, and a little spirit fire for company.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-kitsune",
+      "name" : "Kitsune",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big feet, bigger fluff, and shy of cameras since forever.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-yeti",
+      "name" : "Yeti",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Horns down, nose ring on, and proud of every maze it solved.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-minotaur",
+      "name" : "Minotaur",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A crown of snakes that never agree on a hairstyle. Eye contact optional.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-medusa",
+      "name" : "Medusa",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "One big eye, one big club, and surprisingly good depth perception.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-cyclops",
+      "name" : "Cyclops",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Cloud-white wings that flap just enough to look casual about flying.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-pegasus",
+      "name" : "Pegasus",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Asks one riddle per day. This week's: why does the build only fail on Fridays?",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-sphinx",
+      "name" : "Sphinx",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Part rabbit, part antelope, entirely a tall tale told around the campfire.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-jackalope",
+      "name" : "Jackalope",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A full moon, a fuzzy mood, and zero interest in the dress code.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-werewolf",
+      "name" : "Werewolf",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wobbly, shiny, and always one drip away from a puddle.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-slime",
+      "name" : "Slime",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Shuffles in slowly, groans about Mondays, and only wants a good brain-teaser.",
+      "collection" : "myths",
+      "collectionTitle" : "Myths & Monsters",
+      "id" : "b11-zombie",
+      "name" : "Zombie",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Terrifying teeth, tiny arms, and a tail that clears the room.",
+      "collection" : "prehistoric",
+      "collectionTitle" : "Prehistoric",
+      "id" : "b11-trex",
+      "name" : "T-Rex",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Three horns, one frill, and a very firm stance on personal space.",
+      "collection" : "prehistoric",
+      "collectionTitle" : "Prehistoric",
+      "id" : "b11-triceratops",
+      "name" : "Triceratops",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Back plates in a row, spikes on the tail, brain the size of a walnut.",
+      "collection" : "prehistoric",
+      "collectionTitle" : "Prehistoric",
+      "id" : "b11-stegosaurus",
+      "name" : "Stegosaurus",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Wide wings, a pointy crest, and a swooping opinion of everything below.",
+      "collection" : "prehistoric",
+      "collectionTitle" : "Prehistoric",
+      "id" : "b11-pterodactyl",
+      "name" : "Pterodactyl",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Shaggy coat, curved tusks, and a trunk that sniffs out snow.",
+      "collection" : "prehistoric",
+      "collectionTitle" : "Prehistoric",
+      "id" : "b11-mammoth",
+      "name" : "Mammoth",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sealed in golden amber, a tiny bug keeping Clawd company for ages.",
+      "collection" : "prehistoric",
+      "collectionTitle" : "Prehistoric",
+      "id" : "b11-amber-fossil",
+      "name" : "Amber Fossil",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Blocky, bright, and one quarter away from the high score.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-8bit-arcade",
+      "name" : "8-bit Arcade",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Phosphor glow, a little static, and a chunky beige frame.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-crt-monitor",
+      "name" : "CRT Monitor",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "1.44 megabytes of pure nostalgia. Please do not bend.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-floppy-disk",
+      "name" : "Floppy Disk",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Press play, and flip it over when the song ends.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-cassette",
+      "name" : "Cassette",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Beep beep. Somebody needs you right now, call them back.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-pager",
+      "name" : "Pager",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Screeches, squeals, and a patient wait for one tiny picture.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-dial-up",
+      "name" : "Dial-up",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Blow on it first. Works every time, scientifically unproven.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-game-cartridge",
+      "name" : "Game Cartridge",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tells the time and also does your taxes. Peak nerd chic.",
+      "collection" : "retro",
+      "collectionTitle" : "Retro Tech",
+      "id" : "b12-calculator-watch",
+      "name" : "Calculator Watch",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pompadour, leather jacket, and a cool nod to the jukebox.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-50s-greaser",
+      "name" : "50s Greaser",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Peace, love, and daisies tucked behind every ear.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-60s-flower-power",
+      "name" : "60s Flower Power",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big collar, bigger hair, and a mirror ball doing the real work.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-70s-disco",
+      "name" : "70s Disco",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Neon headband, leg warmers, and a very enthusiastic five, six, seven, eight.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-80s-aerobics",
+      "name" : "80s Aerobics",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Flannel, a beanie, and a quiet mood to match the guitar.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-90s-grunge",
+      "name" : "90s Grunge",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Butterfly clips, frosted tips, and a flip phone for the new millennium.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-y2k",
+      "name" : "Y2K",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pink skies, a marble bust vibe, and a sunset that never ends.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-vaporwave",
+      "name" : "Vaporwave",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Neon grid, sunset stripes, and a midnight drive with no map.",
+      "collection" : "decades",
+      "collectionTitle" : "Through the Decades",
+      "id" : "b12-synthwave",
+      "name" : "Synthwave",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Every color after the rain, arching right over its head.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-rainbow",
+      "name" : "Rainbow",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Spinning in place and very much not on a leaf-blowing schedule.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-tornado",
+      "name" : "Tornado",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Charged up, crackling, and not to be shaken hands with.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-lightning-bolt",
+      "name" : "Lightning Bolt",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "No two alike, and this one is definitely the cutest.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-snowflake",
+      "name" : "Snowflake",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Quiet most days. Then a spectacular, glowing opinion.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-volcano",
+      "name" : "Volcano",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Green ribbons of light, dancing slowly over a cold, clear night.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-aurora",
+      "name" : "Aurora",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Prickly outside, soft inside, and tiny flowers on top.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-cactus",
+      "name" : "Cactus",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A spotted red cap and a quiet life in the damp, mossy shade.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-mushroom",
+      "name" : "Mushroom",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Always facing the light and always in a good mood about it.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-sunflower",
+      "name" : "Sunflower",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Patient, pruned, and a tiny tree of great composure.",
+      "collection" : "nature",
+      "collectionTitle" : "Nature & Weather",
+      "id" : "b12-bonsai",
+      "name" : "Bonsai",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A towering pink mohawk, safety pins, and three chords of attitude.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-punk-mohawk",
+      "name" : "Punk Mohawk",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Black leather, a spiked collar, and hair that headbangs on its own.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-metalhead",
+      "name" : "Metalhead",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Gold tiara, a pearl necklace, and a note that shatters glass.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-opera-diva",
+      "name" : "Opera Diva",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Shades, a beret, and a golden sax that smooths over every bug.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-jazz-sax",
+      "name" : "Jazz Sax",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tails, a white bow tie, and a baton that commands the whole orchestra.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-conductor",
+      "name" : "Conductor",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Big headphones, a warm mug, and beats to relax and refactor to.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-lofi-study",
+      "name" : "Lo-fi Study",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A bucket hat, a mic cupped tight, and a drum kit made of mouth.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-beatboxer",
+      "name" : "Beatboxer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sparkly stage outfit, a headset mic, and a fan club that never sleeps.",
+      "collection" : "music",
+      "collectionTitle" : "Music Scenes",
+      "id" : "b13-idol-star",
+      "name" : "Idol Star",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Olive Mjolnir armor, a mirrored gold visor, and a need for a weapon.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-master-chief",
+      "name" : "Master Chief",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Praetor helm, a glowing red Slayer mark, and heavy metal in the distance.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-doom-slayer",
+      "name" : "Doom Slayer",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Ash-pale skin, a crimson tattoo stripe, a heavy beard, and twin chained blades.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-god-of-war",
+      "name" : "God of War",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Round, pink, endlessly hungry, and riding a golden Warp Star.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-kirby",
+      "name" : "Kirby",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Two-tone blue helmet, a charged arm cannon, and eight robot bosses to go.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-mega-man",
+      "name" : "Mega Man",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A swirled brown curl, a red monogrammed tie, and a wooden barrel ready to roll.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-donkey-kong",
+      "name" : "Donkey Kong",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A pale horned shell, a tattered cloak, and a sharpened nail in hand.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-hollow-knight",
+      "name" : "Hollow Knight",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blue hoodie, pink slippers, a wide grin, and one flashing cyan eye.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-sans",
+      "name" : "Sans",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Porcelain rim, a bent red-and-white striped straw, and a finger-snap spark.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-cuphead",
+      "name" : "Cuphead",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Spiky golden hair, a single pauldron, and a Buster Sword taller than he is.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-cloud-strife",
+      "name" : "Cloud Strife",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "White karate gi, a fluttering red headband, and a surging blue Hadouken.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-ryu",
+      "name" : "Ryu",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "An orange portal above, a blue portal below, and a loyal Companion Cube.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-portal",
+      "name" : "Portal",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Studded iron helm with curved horns and a Thu'um that shakes the mountains.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-skyrim-dragonborn",
+      "name" : "Skyrim Dragonborn",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A glowing green crystal hovering overhead. Mood: well rested and inspired.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-sims-plumbob",
+      "name" : "Sims Plumbob",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Wavy blonde hair, a blue and gold Vault jumpsuit, a Pip-Boy, and a thumbs up.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-vault-boy",
+      "name" : "Vault Boy",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A round warrior jar sealed with red wax on top, ready for a friendly duel.",
+      "collection" : "videoGames",
+      "collectionTitle" : "Video Games",
+      "id" : "b14-elden-pot-boy",
+      "name" : "Elden Ring Pot Boy",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Cat ears on top, five tentacles below, and a green contribution grid.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-github-octocat",
+      "name" : "GitHub Octocat",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A cheerful blue whale carrying a neat stack of shipping containers.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-docker-whale",
+      "name" : "Docker Whale",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Black feathers, a white belly, a bright orange beak, and root access.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-linux-tux",
+      "name" : "Linux Tux",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A fellow crustacean with big friendly pincers and zero borrow-checker errors.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-rust-ferris",
+      "name" : "Rust Ferris",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Blue and gold twin serpents, readable syntax, and zero curly braces.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-python",
+      "name" : "Python",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Swept-back flame-orange wings built for fast compiles and strict concurrency.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-swift-bird",
+      "name" : "Swift Bird",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A grey tray overflowing with tilted orange bars of accepted answers.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-stack-overflow",
+      "name" : "Stack Overflow",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A green diamond V crest and a modal aura. Nobody knows how to exit.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-vim",
+      "name" : "Vim",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A frothy golden mug of packages pouring straight into `\/opt\/homebrew`.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-homebrew",
+      "name" : "Homebrew",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Golden smiley, rosy cheeks, and two open hands ready to share weights.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-hugging-face",
+      "name" : "Hugging Face",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "A sharp cyan A-frame peak on top. Uses Arch, by the way.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-arch-linux",
+      "name" : "Arch Linux",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Bright orange square, a crisp white Y, and 400 comments on the front page.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-hacker-news",
+      "name" : "Hacker News",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Five colorful pills stacked together and three multiplayer cursors hovering by.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-figma",
+      "name" : "Figma",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Matte black pyramid, crisp white apex, deployed to the edge in two seconds.",
+      "collection" : "techIcons",
+      "collectionTitle" : "Tech & Dev Icons",
+      "id" : "b15-vercel-triangle",
+      "name" : "Vercel Triangle",
+      "trademarked" : true
+    },
+    {
+      "blurb" : "Warm golden bands and a tilted ring of ice and dust orbiting the waist.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-saturn",
+      "name" : "Saturn",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Event horizon in the middle and a blazing orange accretion disk bent by gravity.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-black-hole",
+      "name" : "Black Hole",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A star going out in style, flinging neon shockwaves across the canvas.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-supernova",
+      "name" : "Supernova",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "An icy cyan nucleus trailing a sparkling dust tail across the night sky.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-comet",
+      "name" : "Comet",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Six rocker-bogie wheels, a camera mast on top, and red dust everywhere.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-mars-rover",
+      "name" : "Mars Rover",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Eighteen hexagonal gold mirrors and a five-layer silver sunshield.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-jwst-telescope",
+      "name" : "JWST Telescope",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Moon-black silhouette ringed by a shimmering pearl and gold corona.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-solar-eclipse",
+      "name" : "Solar Eclipse",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pillars of violet, magenta, and teal starlight.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-nebula",
+      "name" : "Nebula",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Etched in gold with pulsar maps and greetings from Earth, drifting past Pluto.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-voyager-record",
+      "name" : "Voyager Golden Record",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Freeze-dried Neapolitan stripes in a foil pouch, floating in zero gravity.",
+      "collection" : "space",
+      "collectionTitle" : "Space & Cosmos",
+      "id" : "b16-astronaut-ice-cream",
+      "name" : "Astronaut Ice Cream",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Cobalt swirls, glowing cypress gold stars, and a painter's straw hat.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-starry-night",
+      "name" : "Starry Night",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Primary red, blue, and yellow rectangles framed in crisp black gridlines.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-mondrian",
+      "name" : "Mondrian",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "An upturned waxing mustache and a soft clock melting off the shoulder.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-dali",
+      "name" : "Salvador Dali",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Prussian blue crests, white foam claws, and tiny Mount Fuji on the horizon.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-great-wave",
+      "name" : "Great Wave",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Screen-printed magenta, cyan, and halftone yellow straight off the factory wall.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-pop-art",
+      "name" : "Pop Art",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Crisp diagonal paper creases folded from a single square sheet of crane paper.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-origami",
+      "name" : "Origami",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Lead-lined jewel panes of ruby, emerald, sapphire, and amber catching the sun.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-stained-glass",
+      "name" : "Stained Glass",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Chiseled Carrara marble, a laurel crown, and a pedestal worthy of a museum.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-marble-statue",
+      "name" : "Marble Statue",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Cyanotype grid lines, white dimension ticks, and exact 16x12 tolerances.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-blueprint",
+      "name" : "Blueprint",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Chromatic aberration, shifted scanlines, and a V-sync that gave up.",
+      "collection" : "art",
+      "collectionTitle" : "Art & Aesthetics",
+      "id" : "b16-glitch-art",
+      "name" : "Glitch Art",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Faceted crimson icosahedron rolling a natural twenty right on the table.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-d20-crit",
+      "name" : "D20 Critical Hit",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Carved ivory crown with a cross finial on top, moving one careful square at a time.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-chess-king",
+      "name" : "Chess King",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Tall silk top hat, a gold monocle, a white mustache, and hotels on Boardwalk.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-monopoly-tycoon",
+      "name" : "Monopoly Tycoon",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Ace of spades on the chest, a stack of casino chips, and a stone-cold poker face.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-poker-royal-flush",
+      "name" : "Poker Royal Flush",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Smooth ivory face, bamboo green backing, and a red dragon carved in the center.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-mahjong-dragon",
+      "name" : "Mahjong Dragon Tile",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Glossy billiard black with a white number circle. Outlook is decidedly good.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-8-ball",
+      "name" : "8-Ball",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "An infinity halo overhead, a gold-trimmed border, and all four suits at hand.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-tarot-magician",
+      "name" : "Tarot Magician",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Black tile, brass spinner pin in the middle, and white pips ready to topple.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-domino",
+      "name" : "Domino",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A shiny three-pronged arcade claw descending from the top of the cabinet.",
+      "collection" : "tabletop",
+      "collectionTitle" : "Tabletop & Games",
+      "id" : "b17-claw-machine",
+      "name" : "Claw Machine",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Silver cap and base with warm magenta wax blobs drifting up and down.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-lava-lamp",
+      "name" : "Lava Lamp",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A wooden plinth underneath and a gentle swirl of white flakes when shaken.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-snow-globe",
+      "name" : "Snow Globe",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Brushed chrome sides, a push lever on the right, and two golden slices popping up.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-toaster",
+      "name" : "Toaster",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Iconic red scales, a white cross emblem, and a gadget for every occasion.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-swiss-army-knife",
+      "name" : "Swiss Army Knife",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A rainbow stripe down the front, a flashbar on top, and a fresh photo sliding out.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-polaroid-camera",
+      "name" : "Polaroid Camera",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Spinning black grooves, a warm red center label, and a silver tonearm on the track.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-vinyl-turntable",
+      "name" : "Vinyl Turntable",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "A cast-iron red base, a coin slot, and a glass dome full of colorful sweets.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-gumball-machine",
+      "name" : "Gumball Machine",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Signal yellow housing cycling smoothly through red, amber, and green.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-traffic-light",
+      "name" : "Traffic Light",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Mirrored silver tiles throwing glints of light across the whole menu bar.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-disco-ball",
+      "name" : "Disco Ball",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Pastel shell, a tiny bead chain on top, and three little buttons at the bottom.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-tamagotchi-egg",
+      "name" : "Tamagotchi Egg",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Carved chalet roof, swinging brass pendulum, and a little bird on the hour.",
+      "collection" : "objects",
+      "collectionTitle" : "Everyday Objects",
+      "id" : "b17-cuckoo-clock",
+      "name" : "Cuckoo Clock",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Scuderia red livery, rear wing spoiler, and soft-compound slick tires.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-f1-racer",
+      "name" : "F1 Racer",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Sunny yellow hull, round portholes, and a periscope scanning the waves.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-yellow-submarine",
+      "name" : "Yellow Submarine",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Rainbow canopy panels, a twin burner flame, and a wicker basket below.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-hot-air-balloon",
+      "name" : "Hot Air Balloon",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Cast-iron smokestack, brass bell, cowcatcher, and puffs of white steam.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-steam-train",
+      "name" : "Steam Train",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Oversized mud tires, chrome exhaust stacks, and flame decals on the fenders.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-monster-truck",
+      "name" : "Monster Truck",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "V-fin antenna crest, shoulder thrusters, and cockpit hatches locked in.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-mech-suit",
+      "name" : "Mech Suit",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Billowing white sails, an oak hull, and a jolly roger flying from the mainmast.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-pirate-ship",
+      "name" : "Pirate Ship",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Mint-green curves, a round chrome headlamp, and a breezy ride through Rome.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-vespa-scooter",
+      "name" : "Vespa Scooter",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Backwards cap, a maple deck underfoot, and orange urethane wheels mid-kickflip.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-skateboarder",
+      "name" : "Skateboarder",
+      "trademarked" : false
+    },
+    {
+      "blurb" : "Twin silver thrusters strapped to the back and a trail of orange rocket exhaust.",
+      "collection" : "vehicles",
+      "collectionTitle" : "Vehicles & Rides",
+      "id" : "b17-jetpack",
+      "name" : "Jetpack",
+      "trademarked" : false
+    }
+  ],
+  "moods" : [
+    {
+      "hint" : "Always around",
+      "id" : "mood-idle",
+      "name" : "Idle",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 2.7999999999999998,
+              "file" : "moods\/dark\/mood-idle-0.png"
+            },
+            {
+              "duration" : 0.14000000000000001,
+              "file" : "moods\/dark\/mood-idle-1.png"
+            },
+            {
+              "duration" : 4.2000000000000002,
+              "file" : "moods\/dark\/mood-idle-2.png"
+            },
+            {
+              "duration" : 0.14000000000000001,
+              "file" : "moods\/dark\/mood-idle-3.png"
+            },
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/dark\/mood-idle-4.png"
+            },
+            {
+              "duration" : 0.12,
+              "file" : "moods\/dark\/mood-idle-5.png"
+            }
+          ],
+          "oneShot" : false
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 2.7999999999999998,
+              "file" : "moods\/light\/mood-idle-0.png"
+            },
+            {
+              "duration" : 0.14000000000000001,
+              "file" : "moods\/light\/mood-idle-1.png"
+            },
+            {
+              "duration" : 4.2000000000000002,
+              "file" : "moods\/light\/mood-idle-2.png"
+            },
+            {
+              "duration" : 0.14000000000000001,
+              "file" : "moods\/light\/mood-idle-3.png"
+            },
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/light\/mood-idle-4.png"
+            },
+            {
+              "duration" : 0.12,
+              "file" : "moods\/light\/mood-idle-5.png"
+            }
+          ],
+          "oneShot" : false
+        }
+      }
+    },
+    {
+      "hint" : "Claude is running",
+      "id" : "mood-working",
+      "name" : "Working",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/dark\/mood-working-0.png"
+            },
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/dark\/mood-working-1.png"
+            },
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/dark\/mood-working-2.png"
+            },
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/dark\/mood-working-3.png"
+            }
+          ],
+          "oneShot" : false
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/light\/mood-working-0.png"
+            },
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/light\/mood-working-1.png"
+            },
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/light\/mood-working-2.png"
+            },
+            {
+              "duration" : 0.23999999999999999,
+              "file" : "moods\/light\/mood-working-3.png"
+            }
+          ],
+          "oneShot" : false
+        }
+      }
+    },
+    {
+      "hint" : "30 quiet minutes",
+      "id" : "mood-sleepy",
+      "name" : "Napping",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/dark\/mood-sleepy-0.png"
+            },
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/dark\/mood-sleepy-1.png"
+            },
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/dark\/mood-sleepy-2.png"
+            }
+          ],
+          "oneShot" : false
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/light\/mood-sleepy-0.png"
+            },
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/light\/mood-sleepy-1.png"
+            },
+            {
+              "duration" : 0.90000000000000002,
+              "file" : "moods\/light\/mood-sleepy-2.png"
+            }
+          ],
+          "oneShot" : false
+        }
+      }
+    },
+    {
+      "hint" : "Usage at 75%",
+      "id" : "mood-strained",
+      "name" : "Sweating",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 0.16,
+              "file" : "moods\/dark\/mood-strained-0.png"
+            },
+            {
+              "duration" : 0.16,
+              "file" : "moods\/dark\/mood-strained-1.png"
+            },
+            {
+              "duration" : 0.16,
+              "file" : "moods\/dark\/mood-strained-2.png"
+            }
+          ],
+          "oneShot" : false
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 0.16,
+              "file" : "moods\/light\/mood-strained-0.png"
+            },
+            {
+              "duration" : 0.16,
+              "file" : "moods\/light\/mood-strained-1.png"
+            },
+            {
+              "duration" : 0.16,
+              "file" : "moods\/light\/mood-strained-2.png"
+            }
+          ],
+          "oneShot" : false
+        }
+      }
+    },
+    {
+      "hint" : "Usage at 90%",
+      "id" : "mood-maxed",
+      "name" : "Red-hot",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-maxed-0.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-maxed-1.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-maxed-2.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-maxed-3.png"
+            }
+          ],
+          "oneShot" : false
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-maxed-0.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-maxed-1.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-maxed-2.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-maxed-3.png"
+            }
+          ],
+          "oneShot" : false
+        }
+      }
+    },
+    {
+      "hint" : "Usage at 100%",
+      "id" : "mood-locked",
+      "name" : "Ghost",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 0.5,
+              "file" : "moods\/dark\/mood-locked-0.png"
+            },
+            {
+              "duration" : 0.5,
+              "file" : "moods\/dark\/mood-locked-1.png"
+            },
+            {
+              "duration" : 0.5,
+              "file" : "moods\/dark\/mood-locked-2.png"
+            },
+            {
+              "duration" : 0.5,
+              "file" : "moods\/dark\/mood-locked-3.png"
+            }
+          ],
+          "oneShot" : false
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 0.5,
+              "file" : "moods\/light\/mood-locked-0.png"
+            },
+            {
+              "duration" : 0.5,
+              "file" : "moods\/light\/mood-locked-1.png"
+            },
+            {
+              "duration" : 0.5,
+              "file" : "moods\/light\/mood-locked-2.png"
+            },
+            {
+              "duration" : 0.5,
+              "file" : "moods\/light\/mood-locked-3.png"
+            }
+          ],
+          "oneShot" : false
+        }
+      }
+    },
+    {
+      "hint" : "Your limit resets",
+      "id" : "mood-reset",
+      "name" : "Finish line",
+      "themes" : {
+        "dark" : {
+          "frames" : [
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-0.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-1.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-2.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-3.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-4.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-5.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-6.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-7.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-8.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-9.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-10.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-11.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-12.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-13.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-14.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/dark\/mood-reset-15.png"
+            }
+          ],
+          "oneShot" : true
+        },
+        "light" : {
+          "frames" : [
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-0.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-1.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-2.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-3.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-4.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-5.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-6.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-7.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-8.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-9.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-10.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-11.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-12.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-13.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-14.png"
+            },
+            {
+              "duration" : 0.20000000000000001,
+              "file" : "moods\/light\/mood-reset-15.png"
+            }
+          ],
+          "oneShot" : true
+        }
+      }
+    }
+  ],
+  "pxPerCell" : 10
+}

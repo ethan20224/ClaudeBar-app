@@ -1,0 +1,15 @@
+name: Suggest a feature
+description: Something ClaudeBar should do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should ClaudeBar do, and what moment made you want it?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you do today instead
